@@ -18,6 +18,9 @@
 		158ECBF12ADC803100247626 /* DailyLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 158ECBE32ADC803100247626 /* DailyLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		158ECBF42ADC803100247626 /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
 		158ECBF52ADC803100247626 /* DailyLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		158ECBFE2ADC808400247626 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFD2ADC808400247626 /* Translation.swift */; };
+		158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFF2ADC82B500247626 /* TranslationProvider.swift */; };
+		158ECC032ADC840200247626 /* ItalianTranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -93,6 +96,9 @@
 		158ECBE32ADC803100247626 /* DailyLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyLibrary.h; sourceTree = "<group>"; };
 		158ECBE82ADC803100247626 /* DailyLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLibraryTests.swift; sourceTree = "<group>"; };
+		158ECBFD2ADC808400247626 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		158ECBFF2ADC82B500247626 /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
+		158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalianTranslationProvider.swift; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,7 +167,10 @@
 		158ECBE22ADC803100247626 /* DailyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				158ECC012ADC83F100247626 /* Providers */,
 				158ECBE32ADC803100247626 /* DailyLibrary.h */,
+				158ECBFD2ADC808400247626 /* Translation.swift */,
+				158ECBFF2ADC82B500247626 /* TranslationProvider.swift */,
 			);
 			path = DailyLibrary;
 			sourceTree = "<group>";
@@ -172,6 +181,14 @@
 				158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */,
 			);
 			path = DailyLibraryTests;
+			sourceTree = "<group>";
+		};
+		158ECC012ADC83F100247626 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		15FF325E2ADC630E00B6B2AA = {
@@ -321,6 +338,7 @@
 					};
 					158ECBE02ADC803100247626 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					158ECBE72ADC803100247626 = {
 						CreatedOnToolsVersion = 15.0;
@@ -400,6 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */,
+				158ECBFE2ADC808400247626 /* Translation.swift in Sources */,
+				158ECC032ADC840200247626 /* ItalianTranslationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +546,7 @@
 		158ECBF72ADC803100247626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -555,6 +577,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -565,6 +588,7 @@
 		158ECBF82ADC803100247626 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
