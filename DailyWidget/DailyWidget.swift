@@ -10,11 +10,11 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+        SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+        let entry = SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
         completion(entry)
     }
 
@@ -25,7 +25,7 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
+            let entry = SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
             entries.append(entry)
         }
 
@@ -34,9 +34,14 @@ struct Provider: TimelineProvider {
     }
 }
 
+struct Translation {
+    let english: String
+    let translated: String
+}
+
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let emoji: String
+    let translation: Translation
 }
 
 struct DailyWidgetEntryView : View {
@@ -44,13 +49,11 @@ struct DailyWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            HStack {
-                Text("Time:")
-                Text(entry.date, style: .time)
-            }
-
-            Text("Emoji:")
-            Text(entry.emoji)
+            Text(entry.translation.english)
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text(entry.translation.translated)
         }
     }
 }
@@ -60,14 +63,8 @@ struct DailyWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(macOS 14.0, iOS 17.0, *) {
-                DailyWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                DailyWidgetEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+            DailyWidgetEntryView(entry: entry)
+                .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
@@ -77,6 +74,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
+    SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
 }
