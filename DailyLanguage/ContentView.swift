@@ -13,6 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+
             Text(translation.language.emoji)
                 .font(.title)
             VStack() {
@@ -22,12 +24,15 @@ struct ContentView: View {
                 Text(translation.original)
                     .font(.system(.body))
             }
-            .padding()
+
+            Spacer()
+
             Button(action: {
                 translation = globalProvider.randomTranslation(to: .Italian)!
             }) {
                 Text("Shuffle")
             }
+            .padding()
         }
     }
 }
