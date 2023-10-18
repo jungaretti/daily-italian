@@ -10,4 +10,9 @@ import Foundation
 public struct Translation {
     public var original: String
     public var translation: String
+    
+    public init(original: String, translation: String) {
+        self.original = original
+        self.translation = translation
+    }
 }

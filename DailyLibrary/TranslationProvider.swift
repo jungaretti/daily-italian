@@ -7,12 +7,14 @@
 
 import Foundation
 
-public protocol TranslationProvider {
-    var dictionary: [Translation] { get }
-}
-
-public extension TranslationProvider {
-    func randomTranslation() -> Translation? {
-        return dictionary.randomElement();
+public struct TranslationProvider {
+    private let translations: [Translation]
+    
+    public init(translations: [Translation]) {
+        self.translations = translations
+    }
+    
+    public func getRandomTranslation() -> Translation? {
+        return translations.randomElement();
     }
 }

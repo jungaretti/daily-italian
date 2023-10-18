@@ -15,12 +15,11 @@
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		158ECBE92ADC803100247626 /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
 		158ECBF02ADC803100247626 /* DailyLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */; };
-		158ECBF12ADC803100247626 /* DailyLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 158ECBE32ADC803100247626 /* DailyLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		158ECBF42ADC803100247626 /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
 		158ECBF52ADC803100247626 /* DailyLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		158ECBFE2ADC808400247626 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFD2ADC808400247626 /* Translation.swift */; };
 		158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFF2ADC82B500247626 /* TranslationProvider.swift */; };
-		158ECC032ADC840200247626 /* ItalianTranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */; };
+		15E381D62ADFA68600D35DBE /* Italian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E381D52ADFA68600D35DBE /* Italian.swift */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -93,12 +92,11 @@
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
 		158ECBE12ADC803100247626 /* DailyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		158ECBE32ADC803100247626 /* DailyLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyLibrary.h; sourceTree = "<group>"; };
 		158ECBE82ADC803100247626 /* DailyLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLibraryTests.swift; sourceTree = "<group>"; };
 		158ECBFD2ADC808400247626 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		158ECBFF2ADC82B500247626 /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
-		158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalianTranslationProvider.swift; sourceTree = "<group>"; };
+		15E381D52ADFA68600D35DBE /* Italian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Italian.swift; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,8 +165,7 @@
 		158ECBE22ADC803100247626 /* DailyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				158ECC012ADC83F100247626 /* Providers */,
-				158ECBE32ADC803100247626 /* DailyLibrary.h */,
+				15E381D72ADFA77000D35DBE /* Languages */,
 				158ECBFD2ADC808400247626 /* Translation.swift */,
 				158ECBFF2ADC82B500247626 /* TranslationProvider.swift */,
 			);
@@ -183,12 +180,12 @@
 			path = DailyLibraryTests;
 			sourceTree = "<group>";
 		};
-		158ECC012ADC83F100247626 /* Providers */ = {
+		15E381D72ADFA77000D35DBE /* Languages */ = {
 			isa = PBXGroup;
 			children = (
-				158ECC022ADC840200247626 /* ItalianTranslationProvider.swift */,
+				15E381D52ADFA68600D35DBE /* Italian.swift */,
 			);
-			path = Providers;
+			path = Languages;
 			sourceTree = "<group>";
 		};
 		15FF325E2ADC630E00B6B2AA = {
@@ -241,7 +238,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158ECBF12ADC803100247626 /* DailyLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +416,7 @@
 			files = (
 				158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */,
 				158ECBFE2ADC808400247626 /* Translation.swift in Sources */,
-				158ECC032ADC840200247626 /* ItalianTranslationProvider.swift in Sources */,
+				15E381D62ADFA68600D35DBE /* Italian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,19 +16,15 @@ class DailyLibraryTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testTranslation() {
-        let ciaoTranslation = Translation(original: "hello", translation: "ciao")
-        
-        XCTAssertEqual("hello", ciaoTranslation.original)
-        XCTAssertEqual("ciao", ciaoTranslation.translation)
-    }
     
-    func testTranslationProviderExtension() {
-        let provider = ItalianTranslationProvider()
-        let translation = provider.randomTranslation()
+    func testTranslationProviderGetRandomTranslation() {
+        let mockTranslation = Translation(original: "hello", translation: "ciao")
         
-        let dictionaryContainsTranslation = provider.dictionary.contains(where: { $0.original == translation?.original && $0.translation == translation?.translation })
-        XCTAssertTrue(dictionaryContainsTranslation)
+        let translations = [mockTranslation]
+        let provider = TranslationProvider(translations: translations)
+        let randomTranslation = provider.getRandomTranslation()
+        
+        XCTAssertEqual(mockTranslation.original, randomTranslation?.original)
+        XCTAssertEqual(mockTranslation.translation, randomTranslation?.translation)
     }
 }
