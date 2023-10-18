@@ -77,8 +77,9 @@ struct DailyWidget: Widget {
             DailyWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Random Word")
+        .description("Practice a random word.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
