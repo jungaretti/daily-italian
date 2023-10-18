@@ -22,7 +22,6 @@
 		15E381D62ADFA68600D35DBE /* Italian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E381D52ADFA68600D35DBE /* Italian.swift */; };
 		15E381D92ADFA8C200D35DBE /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E381D82ADFA8C200D35DBE /* Language.swift */; };
 		15EF33F72ADFAAF6009FAF0F /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
-		15EF33F82ADFAAF6009FAF0F /* DailyLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -86,17 +85,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				158ECBF52ADC803100247626 /* DailyLibrary.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15EF33FB2ADFAAF6009FAF0F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				15EF33F82ADFAAF6009FAF0F /* DailyLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +263,6 @@
 				158ECBC22ADC63D900247626 /* Sources */,
 				158ECBC32ADC63D900247626 /* Frameworks */,
 				158ECBC42ADC63D900247626 /* Resources */,
-				15EF33FB2ADFAAF6009FAF0F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
