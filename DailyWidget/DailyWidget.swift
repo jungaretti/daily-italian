@@ -10,8 +10,6 @@ import SwiftUI
 import DailyLibrary
 
 struct Provider: TimelineProvider {
-    private let translationProvider = italianProvider
-
     func placeholder(in context: Context) -> SimpleEntry {
         getRandomEntryFor(date: .now)
     }
@@ -36,16 +34,13 @@ struct Provider: TimelineProvider {
     }
 
     private func getRandomEntryFor(date: Date) -> SimpleEntry {
-        let entryLanguage = translationProvider.language
-        let entryTranslation = translationProvider.getRandomTranslation()
-        
-        return SimpleEntry(date: date, language: entryLanguage, translation: entryTranslation)
+        let entryTranslation = globalProvider.randomTranslation(to: .Italian)!
+        return SimpleEntry(date: date, translation: entryTranslation)
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let language: Language
     let translation: Translation
 }
 
@@ -69,7 +64,7 @@ struct DailyWidgetEntryView : View {
             }
             Spacer()
             HStack {
-                Text(entry.language.emoji)
+                Text(entry.translation.language.emoji)
                     .font(.title)
                 Spacer()
             }
@@ -94,5 +89,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, language: .Italian, translation: Translation(original: "hello", translation: "ciao"))
+    SimpleEntry(date: .now, translation: Translation(original: "hello", translation: "ciao", language: .Italian))
 }

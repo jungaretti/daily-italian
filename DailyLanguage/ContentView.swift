@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import DailyLibrary
 
 struct ContentView: View {
+    @State var translation = globalProvider.randomTranslation(to: .Italian)!
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Ciao!")
+            Text(translation.language.emoji)
+                .font(.title)
+            VStack() {
+                Text(translation.translation)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Text(translation.original)
+                    .font(.system(.body))
+            }
+            .padding()
+            Button(action: {
+                translation = globalProvider.randomTranslation(to: .Italian)!
+            }) {
+                Text("Shuffle")
+            }
         }
-        .padding()
     }
 }
 
