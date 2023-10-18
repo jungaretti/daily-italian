@@ -8,15 +8,15 @@
 import Foundation
 
 public struct TranslationProvider {
-    public let language: Language
-    private let translations: [Translation]
+    private let translations: Dictionary<Language, [Translation]>
     
-    public init(language: Language, translations: [Translation]) {
-        self.language = language
-        self.translations = translations
+    public init(translations: [Translation]) {
+        self.translations = Dictionary(grouping: translations, by: { $0.language })
     }
     
-    public func getRandomTranslation() -> Translation {
-        return translations.randomElement()!;
+    public func randomTranslation(to: Language) -> Translation? {
+        return translations[to]?.randomElement()
     }
 }
+
+public let globalProvider = TranslationProvider(translations: italianTranslations)
