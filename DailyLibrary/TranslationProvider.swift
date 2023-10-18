@@ -8,9 +8,11 @@
 import Foundation
 
 public struct TranslationProvider {
+    public let language: Language
     private let translations: [Translation]
     
-    public init(translations: [Translation]) {
+    public init(language: Language, translations: [Translation]) {
+        self.language = language
         self.translations = translations
     }
     

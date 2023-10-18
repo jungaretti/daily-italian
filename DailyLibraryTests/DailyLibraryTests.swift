@@ -19,9 +19,8 @@ class DailyLibraryTests: XCTestCase {
     
     func testTranslationProviderGetRandomTranslation() {
         let mockTranslation = Translation(original: "hello", translation: "ciao")
-        
-        let translations = [mockTranslation]
-        let provider = TranslationProvider(translations: translations)
+
+        let provider = TranslationProvider(language: .Italian, translations: [mockTranslation])
         let randomTranslation = provider.getRandomTranslation()
         
         XCTAssertEqual(mockTranslation.original, randomTranslation?.original)

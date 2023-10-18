@@ -1176,3 +1176,5 @@ public let italianTranslations: [Translation] = [
     Translation(original: "each one", translation: "ognuno"),
     Translation(original: "within", translation: "entro")
 ]
+
+public let italianProvider = TranslationProvider(language: .Italian, translations: italianTranslations)

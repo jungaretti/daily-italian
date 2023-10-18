@@ -7,14 +7,15 @@
 
 import WidgetKit
 import SwiftUI
+import DailyLibrary
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
+        SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
+        let entry = SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
         completion(entry)
     }
 
@@ -25,18 +26,13 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
+            let entry = SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
             entries.append(entry)
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
-}
-
-struct Translation {
-    let english: String
-    let translated: String
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -49,11 +45,11 @@ struct DailyWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text(entry.translation.english)
+            Text(entry.translation.original)
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(entry.translation.translated)
+            Text(entry.translation.translation)
         }
     }
 }
@@ -74,5 +70,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: Translation(english: "hello", translated: "ciao"))
+    SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
 }
