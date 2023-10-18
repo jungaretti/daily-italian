@@ -9,4 +9,13 @@ import Foundation
 
 public enum Language {
     case Italian
+    
+    public var emoji: String {
+        get {
+            switch self {
+            case .Italian:
+                "🇮🇹"
+            }
+        }
+    }
 }

@@ -11,11 +11,11 @@ import DailyLibrary
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
+        SimpleEntry(date: .now, language: italianProvider.language, translation: Translation(original: "hello", translation: "ciao"))
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
+        let entry = SimpleEntry(date: .now, language: italianProvider.language, translation: italianProvider.getRandomTranslation())
         completion(entry)
     }
 
@@ -26,7 +26,7 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
+            let entry = SimpleEntry(date: .now, language: italianProvider.language, translation: italianProvider.getRandomTranslation())
             entries.append(entry)
         }
 
@@ -37,6 +37,7 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let language: Language
     let translation: Translation
 }
 
@@ -45,10 +46,8 @@ struct DailyWidgetEntryView : View {
 
     var body: some View {
         VStack {
+            Text(entry.language.emoji)
             Text(entry.translation.original)
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             Text(entry.translation.translation)
         }
     }
@@ -70,5 +69,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: italianProvider.getRandomTranslation()!)
+    SimpleEntry(date: .now, language: italianProvider.language, translation: Translation(original: "hello", translation: "ciao"))
 }

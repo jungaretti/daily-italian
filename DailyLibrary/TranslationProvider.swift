@@ -16,7 +16,7 @@ public struct TranslationProvider {
         self.translations = translations
     }
     
-    public func getRandomTranslation() -> Translation? {
-        return translations.randomElement();
+    public func getRandomTranslation() -> Translation {
+        return translations.randomElement()!;
     }
 }
