@@ -10,28 +10,36 @@ import SwiftUI
 import DailyLibrary
 
 struct Provider: TimelineProvider {
+    private let translationProvider = italianProvider
+
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: .now, language: italianProvider.language, translation: Translation(original: "hello", translation: "ciao"))
+        getRandomEntryFor(date: .now)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: .now, language: italianProvider.language, translation: italianProvider.getRandomTranslation())
+        let entry = getRandomEntryFor(date: .now)
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+        // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
+        for hourOffset in 0 ..< 24 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: .now, language: italianProvider.language, translation: italianProvider.getRandomTranslation())
-            entries.append(entry)
+            entries.append(getRandomEntryFor(date: entryDate))
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
+    }
+
+    private func getRandomEntryFor(date: Date) -> SimpleEntry {
+        let entryLanguage = translationProvider.language
+        let entryTranslation = translationProvider.getRandomTranslation()
+        
+        return SimpleEntry(date: date, language: entryLanguage, translation: entryTranslation)
     }
 }
 
@@ -86,5 +94,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, language: italianProvider.language, translation: Translation(original: "hello", translation: "ciao"))
+    SimpleEntry(date: .now, language: .Italian, translation: Translation(original: "hello", translation: "ciao"))
 }
