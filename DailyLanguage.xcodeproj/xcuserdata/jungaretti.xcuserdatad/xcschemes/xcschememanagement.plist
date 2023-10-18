@@ -7,7 +7,7 @@
 		<key>DailyLanguage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>DailyLibrary.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,7 +17,25 @@
 		<key>DailyWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>158ECBC52ADC63D900247626</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>158ECBE02ADC803100247626</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15FF32662ADC630E00B6B2AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
