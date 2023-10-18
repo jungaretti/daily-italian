@@ -23,7 +23,7 @@ class DailyLibraryTests: XCTestCase {
         let provider = TranslationProvider(language: .Italian, translations: [mockTranslation])
         let randomTranslation = provider.getRandomTranslation()
         
-        XCTAssertEqual(mockTranslation.original, randomTranslation?.original)
-        XCTAssertEqual(mockTranslation.translation, randomTranslation?.translation)
+        XCTAssertEqual(mockTranslation.original, randomTranslation.original)
+        XCTAssertEqual(mockTranslation.translation, randomTranslation.translation)
     }
 }
