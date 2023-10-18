@@ -46,9 +46,25 @@ struct DailyWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text(entry.language.emoji)
-            Text(entry.translation.original)
-            Text(entry.translation.translation)
+            HStack {
+                Text(entry.translation.translation)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .lineLimit(1)
+//                    .foregroundColor(.green)
+                Spacer()
+            }
+            HStack {
+                Text(entry.translation.original)
+                    .font(.system(.body))
+                Spacer()
+            }
+            Spacer()
+            HStack {
+                Text(entry.language.emoji)
+                    .font(.title)
+                Spacer()
+            }
         }
     }
 }
