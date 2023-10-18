@@ -78,7 +78,7 @@ struct DailyWidget: Widget {
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Random Word")
-        .description("Practice a random word.")
+        .description("Learn new words every day.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
