@@ -51,7 +51,7 @@ struct DailyWidgetEntryView : View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .lineLimit(1)
-//                    .foregroundColor(.green)
+                    .minimumScaleFactor(0.2)
                 Spacer()
             }
             HStack {
