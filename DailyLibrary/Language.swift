@@ -11,11 +11,16 @@ public enum Language {
     case Italian
     
     public var emoji: String {
-        get {
-            switch self {
-            case .Italian:
-                "🇮🇹"
-            }
+        switch self {
+        case .Italian:
+            "🇮🇹"
+        }
+    }
+    
+    public var hello: Translation {
+        switch self {
+        case .Italian:
+            Translation(original: "hello", translation: "ciao", language: .Italian)
         }
     }
 }

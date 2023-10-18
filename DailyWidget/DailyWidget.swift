@@ -15,6 +15,10 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+        if context.isPreview {
+            let entry = SimpleEntry(date: .now, translation: Language.Italian.hello)
+        }
+        
         let entry = getRandomEntryFor(date: .now)
         completion(entry)
     }
@@ -89,5 +93,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: Translation(original: "hello", translation: "ciao", language: .Italian))
+    SimpleEntry(date: .now, translation: Language.Italian.hello)
 }
