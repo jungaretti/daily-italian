@@ -441,7 +441,7 @@ let italianTranslations: [Translation] = [
     Translation(original: "business", translation: "commercio", language: .Italian),
     Translation(original: "uncle", translation: "zio", language: .Italian),
     Translation(original: "factory", translation: "fabbrica", language: .Italian),
-    Translation(original: "defence", translation: "difesa", language: .Italian),
+    Translation(original: "defense", translation: "difesa", language: .Italian),
     Translation(original: "June", translation: "giugno", language: .Italian),
     Translation(original: "meter", translation: "metro", language: .Italian),
     Translation(original: "justice", translation: "giustizia", language: .Italian),
