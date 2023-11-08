@@ -16,7 +16,6 @@
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		15DABF092AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		15DABF102AFB169000D392D2 /* LanguageKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */; };
-		15DABF112AFB169000D392D2 /* LanguageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DABF032AFB169000D392D2 /* LanguageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15DABF142AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		15DABF152AFB169000D392D2 /* LanguageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF1C2AFB16FE00D392D2 /* Language.swift */; };
@@ -103,7 +102,6 @@
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
 		15DABF012AFB169000D392D2 /* LanguageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LanguageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15DABF032AFB169000D392D2 /* LanguageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageKit.h; sourceTree = "<group>"; };
 		15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKitTests.swift; sourceTree = "<group>"; };
 		15DABF1C2AFB16FE00D392D2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				15DABF202AFB19E000D392D2 /* Translations */,
-				15DABF032AFB169000D392D2 /* LanguageKit.h */,
 				15DABF1C2AFB16FE00D392D2 /* Language.swift */,
 				15DABF1E2AFB180A00D392D2 /* Translation.swift */,
 				15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */,
@@ -255,7 +252,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DABF112AFB169000D392D2 /* LanguageKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
