@@ -40,7 +40,7 @@ struct Provider: TimelineProvider {
     }
 
     private func getRandomEntryFor(date: Date) -> SimpleEntry {
-        let entryTranslation = globalProvider.randomTranslations(from: .English, to: .Italian)!
+        let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)!
         return SimpleEntry(date: date, translation: entryTranslation)
     }
 }

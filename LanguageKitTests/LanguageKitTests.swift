@@ -13,7 +13,7 @@ class LanguageKitTests: XCTestCase {
         let translation = Translation(from: (.English, "love"), to: (.Italian, "amore"))
         let translationProvider = TranslationProvider(translations: [translation])
         
-        let randomTranslation = translationProvider.randomTranslations(from: .English, to: .Italian)
+        let randomTranslation = translationProvider.randomTranslation(from: .English, to: .Italian)
         XCTAssert(randomTranslation?.from.language == .English)
         XCTAssert(randomTranslation?.from.text == "love")
         XCTAssert(randomTranslation?.to.language == .Italian)

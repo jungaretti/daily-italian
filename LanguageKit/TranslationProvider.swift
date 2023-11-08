@@ -14,7 +14,7 @@ public struct TranslationProvider {
         self.translations = translations
     }
     
-    public func randomTranslations(from: Language, to: Language) -> Translation? {
+    public func randomTranslation(from: Language, to: Language) -> Translation? {
         let possibleTranslations = translations.filter({ $0.from.language == from && $0.to.language == to })
         return possibleTranslations.randomElement()
     }
