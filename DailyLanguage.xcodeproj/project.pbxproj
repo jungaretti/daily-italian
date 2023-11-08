@@ -13,20 +13,15 @@
 		158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* DailyWidget.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		158ECBE92ADC803100247626 /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
-		158ECBF02ADC803100247626 /* DailyLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */; };
-		158ECBF42ADC803100247626 /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
-		158ECBF52ADC803100247626 /* DailyLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		158ECBFE2ADC808400247626 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFD2ADC808400247626 /* Translation.swift */; };
-		158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBFF2ADC82B500247626 /* TranslationProvider.swift */; };
 		15DABF092AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		15DABF102AFB169000D392D2 /* LanguageKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */; };
 		15DABF112AFB169000D392D2 /* LanguageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DABF032AFB169000D392D2 /* LanguageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15DABF142AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		15DABF152AFB169000D392D2 /* LanguageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		15E381D62ADFA68600D35DBE /* Italian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E381D52ADFA68600D35DBE /* Italian.swift */; };
-		15E381D92ADFA8C200D35DBE /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E381D82ADFA8C200D35DBE /* Language.swift */; };
-		15EF33F72ADFAAF6009FAF0F /* DailyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBE12ADC803100247626 /* DailyLibrary.framework */; };
+		15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF1C2AFB16FE00D392D2 /* Language.swift */; };
+		15DABF1F2AFB180A00D392D2 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF1E2AFB180A00D392D2 /* Translation.swift */; };
+		15DABF222AFB19E900D392D2 /* Italian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF212AFB19E900D392D2 /* Italian.swift */; };
+		15DABF242AFB1BED00D392D2 /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -40,27 +35,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 158ECBC52ADC63D900247626;
 			remoteInfo = DailyWidgetExtension;
-		};
-		158ECBEA2ADC803100247626 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 158ECBE02ADC803100247626;
-			remoteInfo = DailyLibrary;
-		};
-		158ECBEC2ADC803100247626 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15FF32662ADC630E00B6B2AA;
-			remoteInfo = DailyLanguage;
-		};
-		158ECBF22ADC803100247626 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 158ECBE02ADC803100247626;
-			remoteInfo = DailyLibrary;
 		};
 		15DABF0A2AFB169000D392D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -83,13 +57,6 @@
 			remoteGlobalIDString = 15DABF002AFB169000D392D2;
 			remoteInfo = LanguageKit;
 		};
-		15EF33F92ADFAAF6009FAF0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 158ECBE02ADC803100247626;
-			remoteInfo = DailyLibrary;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,7 +77,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				158ECBF52ADC803100247626 /* DailyLibrary.framework in Embed Frameworks */,
 				15DABF152AFB169000D392D2 /* LanguageKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -128,17 +94,14 @@
 		158ECBD12ADC63DB00247626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
-		158ECBE12ADC803100247626 /* DailyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		158ECBE82ADC803100247626 /* DailyLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLibraryTests.swift; sourceTree = "<group>"; };
-		158ECBFD2ADC808400247626 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
-		158ECBFF2ADC82B500247626 /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
 		15DABF012AFB169000D392D2 /* LanguageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LanguageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DABF032AFB169000D392D2 /* LanguageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageKit.h; sourceTree = "<group>"; };
 		15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKitTests.swift; sourceTree = "<group>"; };
-		15E381D52ADFA68600D35DBE /* Italian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Italian.swift; sourceTree = "<group>"; };
-		15E381D82ADFA8C200D35DBE /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		15DABF1C2AFB16FE00D392D2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		15DABF1E2AFB180A00D392D2 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		15DABF212AFB19E900D392D2 /* Italian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Italian.swift; sourceTree = "<group>"; };
+		15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,22 +117,6 @@
 			files = (
 				158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */,
 				158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */,
-				15EF33F72ADFAAF6009FAF0F /* DailyLibrary.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		158ECBDE2ADC803100247626 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		158ECBE52ADC803100247626 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				158ECBE92ADC803100247626 /* DailyLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158ECBF42ADC803100247626 /* DailyLibrary.framework in Frameworks */,
 				15DABF142AFB169000D392D2 /* LanguageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,29 +167,14 @@
 			path = DailyWidget;
 			sourceTree = "<group>";
 		};
-		158ECBE22ADC803100247626 /* DailyLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				15E381D72ADFA77000D35DBE /* Languages */,
-				158ECBFD2ADC808400247626 /* Translation.swift */,
-				158ECBFF2ADC82B500247626 /* TranslationProvider.swift */,
-				15E381D82ADFA8C200D35DBE /* Language.swift */,
-			);
-			path = DailyLibrary;
-			sourceTree = "<group>";
-		};
-		158ECBEE2ADC803100247626 /* DailyLibraryTests */ = {
-			isa = PBXGroup;
-			children = (
-				158ECBEF2ADC803100247626 /* DailyLibraryTests.swift */,
-			);
-			path = DailyLibraryTests;
-			sourceTree = "<group>";
-		};
 		15DABF022AFB169000D392D2 /* LanguageKit */ = {
 			isa = PBXGroup;
 			children = (
+				15DABF202AFB19E000D392D2 /* Translations */,
 				15DABF032AFB169000D392D2 /* LanguageKit.h */,
+				15DABF1C2AFB16FE00D392D2 /* Language.swift */,
+				15DABF1E2AFB180A00D392D2 /* Translation.swift */,
+				15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */,
 			);
 			path = LanguageKit;
 			sourceTree = "<group>";
@@ -256,12 +187,12 @@
 			path = LanguageKitTests;
 			sourceTree = "<group>";
 		};
-		15E381D72ADFA77000D35DBE /* Languages */ = {
+		15DABF202AFB19E000D392D2 /* Translations */ = {
 			isa = PBXGroup;
 			children = (
-				15E381D52ADFA68600D35DBE /* Italian.swift */,
+				15DABF212AFB19E900D392D2 /* Italian.swift */,
 			);
-			path = Languages;
+			path = Translations;
 			sourceTree = "<group>";
 		};
 		15FF325E2ADC630E00B6B2AA = {
@@ -270,8 +201,6 @@
 				155364902AE6E35B00164846 /* README.md */,
 				15FF32692ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBCC2ADC63D900247626 /* DailyWidget */,
-				158ECBE22ADC803100247626 /* DailyLibrary */,
-				158ECBEE2ADC803100247626 /* DailyLibraryTests */,
 				15DABF022AFB169000D392D2 /* LanguageKit */,
 				15DABF0E2AFB169000D392D2 /* LanguageKitTests */,
 				158ECBC72ADC63D900247626 /* Frameworks */,
@@ -284,8 +213,6 @@
 			children = (
 				15FF32672ADC630E00B6B2AA /* DailyLanguage.app */,
 				158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */,
-				158ECBE12ADC803100247626 /* DailyLibrary.framework */,
-				158ECBE82ADC803100247626 /* DailyLibraryTests.xctest */,
 				15DABF012AFB169000D392D2 /* LanguageKit.framework */,
 				15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */,
 			);
@@ -315,13 +242,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		158ECBDC2ADC803100247626 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		15DABEFC2AFB169000D392D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,49 +264,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				15EF33FA2ADFAAF6009FAF0F /* PBXTargetDependency */,
 			);
 			name = DailyWidgetExtension;
 			productName = DailyWidgetExtension;
 			productReference = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		158ECBE02ADC803100247626 /* DailyLibrary */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 158ECBF62ADC803100247626 /* Build configuration list for PBXNativeTarget "DailyLibrary" */;
-			buildPhases = (
-				158ECBDC2ADC803100247626 /* Headers */,
-				158ECBDD2ADC803100247626 /* Sources */,
-				158ECBDE2ADC803100247626 /* Frameworks */,
-				158ECBDF2ADC803100247626 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DailyLibrary;
-			productName = DailyLibrary;
-			productReference = 158ECBE12ADC803100247626 /* DailyLibrary.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		158ECBE72ADC803100247626 /* DailyLibraryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 158ECBFA2ADC803100247626 /* Build configuration list for PBXNativeTarget "DailyLibraryTests" */;
-			buildPhases = (
-				158ECBE42ADC803100247626 /* Sources */,
-				158ECBE52ADC803100247626 /* Frameworks */,
-				158ECBE62ADC803100247626 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				158ECBEB2ADC803100247626 /* PBXTargetDependency */,
-				158ECBED2ADC803100247626 /* PBXTargetDependency */,
-			);
-			name = DailyLibraryTests;
-			productName = DailyLibraryTests;
-			productReference = 158ECBE82ADC803100247626 /* DailyLibraryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		15DABF002AFB169000D392D2 /* LanguageKit */ = {
 			isa = PBXNativeTarget;
@@ -439,7 +321,6 @@
 			);
 			dependencies = (
 				158ECBD62ADC63DB00247626 /* PBXTargetDependency */,
-				158ECBF32ADC803100247626 /* PBXTargetDependency */,
 				15DABF132AFB169000D392D2 /* PBXTargetDependency */,
 			);
 			name = DailyLanguage;
@@ -460,16 +341,9 @@
 					158ECBC52ADC63D900247626 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					158ECBE02ADC803100247626 = {
-						CreatedOnToolsVersion = 15.0;
-						LastSwiftMigration = 1500;
-					};
-					158ECBE72ADC803100247626 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 15FF32662ADC630E00B6B2AA;
-					};
 					15DABF002AFB169000D392D2 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 					15DABF072AFB169000D392D2 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -495,8 +369,6 @@
 			targets = (
 				15FF32662ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBC52ADC63D900247626 /* DailyWidgetExtension */,
-				158ECBE02ADC803100247626 /* DailyLibrary */,
-				158ECBE72ADC803100247626 /* DailyLibraryTests */,
 				15DABF002AFB169000D392D2 /* LanguageKit */,
 				15DABF072AFB169000D392D2 /* LanguageKitTests */,
 			);
@@ -509,20 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		158ECBDF2ADC803100247626 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		158ECBE62ADC803100247626 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,29 +419,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		158ECBDD2ADC803100247626 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				158ECC002ADC82B500247626 /* TranslationProvider.swift in Sources */,
-				15E381D92ADFA8C200D35DBE /* Language.swift in Sources */,
-				158ECBFE2ADC808400247626 /* Translation.swift in Sources */,
-				15E381D62ADFA68600D35DBE /* Italian.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		158ECBE42ADC803100247626 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				158ECBF02ADC803100247626 /* DailyLibraryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		15DABEFD2AFB169000D392D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */,
+				15DABF222AFB19E900D392D2 /* Italian.swift in Sources */,
+				15DABF242AFB1BED00D392D2 /* TranslationProvider.swift in Sources */,
+				15DABF1F2AFB180A00D392D2 /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,21 +455,6 @@
 			target = 158ECBC52ADC63D900247626 /* DailyWidgetExtension */;
 			targetProxy = 158ECBD52ADC63DB00247626 /* PBXContainerItemProxy */;
 		};
-		158ECBEB2ADC803100247626 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 158ECBE02ADC803100247626 /* DailyLibrary */;
-			targetProxy = 158ECBEA2ADC803100247626 /* PBXContainerItemProxy */;
-		};
-		158ECBED2ADC803100247626 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15FF32662ADC630E00B6B2AA /* DailyLanguage */;
-			targetProxy = 158ECBEC2ADC803100247626 /* PBXContainerItemProxy */;
-		};
-		158ECBF32ADC803100247626 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 158ECBE02ADC803100247626 /* DailyLibrary */;
-			targetProxy = 158ECBF22ADC803100247626 /* PBXContainerItemProxy */;
-		};
 		15DABF0B2AFB169000D392D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
@@ -641,11 +469,6 @@
 			isa = PBXTargetDependency;
 			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
 			targetProxy = 15DABF122AFB169000D392D2 /* PBXContainerItemProxy */;
-		};
-		15EF33FA2ADFAAF6009FAF0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 158ECBE02ADC803100247626 /* DailyLibrary */;
-			targetProxy = 15EF33F92ADFAAF6009FAF0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,136 +549,10 @@
 			};
 			name = Release;
 		};
-		158ECBF72ADC803100247626 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		158ECBF82ADC803100247626 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		158ECBFB2ADC803100247626 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLibraryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLanguage";
-			};
-			name = Debug;
-		};
-		158ECBFC2ADC803100247626 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLibraryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLanguage";
-			};
-			name = Release;
-		};
 		15DABF162AFB169000D392D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -886,6 +583,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -896,6 +594,7 @@
 		15DABF172AFB169000D392D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1179,24 +878,6 @@
 			buildConfigurations = (
 				158ECBD92ADC63DB00247626 /* Debug */,
 				158ECBDA2ADC63DB00247626 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		158ECBF62ADC803100247626 /* Build configuration list for PBXNativeTarget "DailyLibrary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				158ECBF72ADC803100247626 /* Debug */,
-				158ECBF82ADC803100247626 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		158ECBFA2ADC803100247626 /* Build configuration list for PBXNativeTarget "DailyLibraryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				158ECBFB2ADC803100247626 /* Debug */,
-				158ECBFC2ADC803100247626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

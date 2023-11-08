@@ -7,7 +7,7 @@
 
 import WidgetKit
 import SwiftUI
-import DailyLibrary
+import LanguageKit
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -16,7 +16,7 @@ struct Provider: TimelineProvider {
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         if context.isPreview {
-            let entry = SimpleEntry(date: .now, translation: Language.Italian.hello)
+            let entry = SimpleEntry(date: .now, translation: globalProvider.randomTranslations(from: .English, to: .Italian)!)
         }
         
         let entry = getRandomEntryFor(date: .now)
@@ -38,7 +38,7 @@ struct Provider: TimelineProvider {
     }
 
     private func getRandomEntryFor(date: Date) -> SimpleEntry {
-        let entryTranslation = globalProvider.randomTranslation(to: .Italian)!
+        let entryTranslation = globalProvider.randomTranslations(from: .English, to: .Italian)!
         return SimpleEntry(date: date, translation: entryTranslation)
     }
 }
@@ -54,7 +54,7 @@ struct DailyWidgetEntryView : View {
     var body: some View {
         VStack {
             HStack {
-                Text(entry.translation.translation)
+                Text(entry.translation.to.text)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .lineLimit(1)
@@ -62,13 +62,13 @@ struct DailyWidgetEntryView : View {
                 Spacer()
             }
             HStack {
-                Text(entry.translation.original)
+                Text(entry.translation.from.text)
                     .font(.system(.body))
                 Spacer()
             }
             Spacer()
             HStack {
-                Text(entry.translation.language.emoji)
+                Text(String(entry.translation.to.language.flagEmoji))
                     .font(.title)
                 Spacer()
             }
@@ -93,5 +93,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: Language.Italian.hello)
+    SimpleEntry(date: .now, translation: globalProvider.randomTranslations(from: .English, to: .Italian)!)
 }

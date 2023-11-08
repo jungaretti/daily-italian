@@ -6,29 +6,29 @@
 //
 
 import SwiftUI
-import DailyLibrary
+import LanguageKit
 
 struct ContentView: View {
-    @State var translation = globalProvider.randomTranslation(to: .Italian)!
+    @State var translation = globalProvider.randomTranslations(from: .English, to: .Italian)!
     
     var body: some View {
         VStack {
             Spacer()
 
-            Text(translation.language.emoji)
+            Text(String(translation.to.language.flagEmoji))
                 .font(.title)
             VStack() {
-                Text(translation.translation)
+                Text(translation.to.text)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text(translation.original)
+                Text(translation.from.text)
                     .font(.system(.body))
             }
 
             Spacer()
 
             Button(action: {
-                translation = globalProvider.randomTranslation(to: .Italian)!
+                translation = globalProvider.randomTranslations(from: .English, to: .Italian)!
             }) {
                 Text("Shuffle")
             }
