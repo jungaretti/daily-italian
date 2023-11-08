@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
@@ -29,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1540CE582AFB2A6800AE9BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15DABF002AFB169000D392D2;
+			remoteInfo = LanguageKit;
+		};
 		158ECBD52ADC63DB00247626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
@@ -115,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */,
 				158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */,
 				158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */,
 			);
@@ -264,6 +273,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1540CE592AFB2A6800AE9BC7 /* PBXTargetDependency */,
 			);
 			name = DailyWidgetExtension;
 			productName = DailyWidgetExtension;
@@ -450,6 +460,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1540CE592AFB2A6800AE9BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
+			targetProxy = 1540CE582AFB2A6800AE9BC7 /* PBXContainerItemProxy */;
+		};
 		158ECBD62ADC63DB00247626 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 158ECBC52ADC63D900247626 /* DailyWidgetExtension */;
