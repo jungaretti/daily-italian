@@ -15,11 +15,13 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+        let entry: SimpleEntry
         if context.isPreview {
-            let entry = SimpleEntry(date: .now, translation: globalProvider.randomTranslations(from: .English, to: .Italian)!)
+            entry = SimpleEntry(date: .now, translation: globalProvider.helloTranslation(from: .English, to: .Italian))
+        } else {
+            entry = getRandomEntryFor(date: .now)
         }
-        
-        let entry = getRandomEntryFor(date: .now)
+
         completion(entry)
     }
 
@@ -93,5 +95,5 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: globalProvider.randomTranslations(from: .English, to: .Italian)!)
+    SimpleEntry(date: .now, translation: globalProvider.helloTranslation(from: .English, to: .Italian))
 }
