@@ -97,3 +97,9 @@ struct DailyWidget: Widget {
 } timeline: {
     SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
+
+#Preview(as: .systemMedium) {
+    DailyWidget()
+} timeline: {
+    SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+}
