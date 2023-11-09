@@ -7,10 +7,10 @@
 
 import Foundation
 
-public enum Language {
-    case Capybarian
-    case English
-    case Italian
+public enum Language: String, Hashable {
+    case Capybarian = "capybarian"
+    case English = "english"
+    case Italian = "italian"
     
     public var flagEmoji: Character {
         switch self {
