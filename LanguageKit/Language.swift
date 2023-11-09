@@ -8,11 +8,14 @@
 import Foundation
 
 public enum Language {
+    case Capybarian
     case English
     case Italian
     
     public var flagEmoji: Character {
         switch self {
+        case .Capybarian:
+            "🏴‍☠️"
         case .English:
             "🇺🇸"
         case .Italian:

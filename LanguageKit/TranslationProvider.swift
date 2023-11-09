@@ -25,6 +25,8 @@ public struct TranslationProvider {
             return Translation(from: (.English, "hello"), to: (.Italian, "ciao"))
         case .Italian:
             return Translation(from: (.Italian, "ciao"), to: (.English, "hello"))
+        case .Capybarian:
+            return Translation(from: (.English, "hello"), to: (.Capybarian, "yo"))
         }
     }
 }
