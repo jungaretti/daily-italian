@@ -22,4 +22,15 @@ public enum Language {
             "🇮🇹"
         }
     }
+
+    public var hello: Word {
+        switch self {
+        case .Capybarian:
+            (self, "yo")
+        case .English:
+            (self, "hello")
+        case .Italian:
+            (self, "ciao")
+        }
+    }
 }
