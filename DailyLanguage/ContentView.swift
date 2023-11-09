@@ -9,7 +9,7 @@ import SwiftUI
 import LanguageKit
 
 struct ContentView: View {
-    @State var translation = globalProvider.randomTranslation(from: .English, to: .Italian)!
+    @State var translation = globalProvider.randomTranslation(from: .English, to: .Italian)
     
     var body: some View {
         VStack {
@@ -28,7 +28,7 @@ struct ContentView: View {
             Spacer()
 
             Button(action: {
-                translation = globalProvider.randomTranslation(from: .English, to: .Italian)!
+                translation = globalProvider.randomTranslation(from: .English, to: .Italian)
             }) {
                 Text("Shuffle")
             }

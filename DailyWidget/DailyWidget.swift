@@ -31,8 +31,8 @@ struct Provider: TimelineProvider {
         // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
         for hourOffset in 0 ..< 24 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            entries.append(getRandomEntryFor(date: entryDate))
+            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)
+            entries.append(getRandomEntryFor(date: entryDate!))
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
@@ -40,7 +40,7 @@ struct Provider: TimelineProvider {
     }
 
     private func getRandomEntryFor(date: Date) -> SimpleEntry {
-        let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)!
+        let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)
         return SimpleEntry(date: date, translation: entryTranslation)
     }
 }
