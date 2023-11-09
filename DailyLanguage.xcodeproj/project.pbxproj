@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		150C5BFC2AFC7B4300310D62 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C5BFB2AFC7B4300310D62 /* Word.swift */; };
+		150C5BFE2AFCC17B00310D62 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = 150C5BFD2AFCC17B00310D62 /* PRIVACY.md */; };
 		1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
@@ -94,6 +95,7 @@
 
 /* Begin PBXFileReference section */
 		150C5BFB2AFC7B4300310D62 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		150C5BFD2AFCC17B00310D62 /* PRIVACY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
@@ -207,6 +209,7 @@
 		15FF325E2ADC630E00B6B2AA = {
 			isa = PBXGroup;
 			children = (
+				150C5BFD2AFCC17B00310D62 /* PRIVACY.md */,
 				155364902AE6E35B00164846 /* README.md */,
 				15FF32692ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBCC2ADC63D900247626 /* DailyWidget */,
@@ -397,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150C5BFE2AFCC17B00310D62 /* PRIVACY.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
