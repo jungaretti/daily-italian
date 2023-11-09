@@ -15,8 +15,8 @@ private struct TranslationKey: Hashable {
 public struct TranslationProvider {
     private let translations: Dictionary<TranslationKey, [Translation]>
     
-    public init(translations: [Translation]) {
-        self.translations = Dictionary(grouping: translations, by: { translation in
+    public init(translations: [Translation]...) {
+        self.translations = Dictionary(grouping: translations.joined(), by: { translation in
             return TranslationKey(from: translation.from.language, to: translation.to.language)
         })
     }
