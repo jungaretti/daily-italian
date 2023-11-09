@@ -68,7 +68,9 @@ struct DailyWidgetEntryView : View {
                     .font(.system(.body))
                 Spacer()
             }
+
             Spacer()
+
             HStack {
                 Text(String(entry.translation.to.language.flagEmoji))
                     .font(.title)
