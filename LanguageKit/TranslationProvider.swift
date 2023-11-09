@@ -21,6 +21,8 @@ public struct TranslationProvider {
         })
     }
 
+    /// Picks a random translation from a language to another language.
+    /// If no translations exist that satisfy the request, then returns a hello-to-hello translation.
     public func randomTranslation(from: Language, to: Language) -> Translation {
         let translationKey = TranslationKey(from: from, to: to)
         let randomTranslation = translations[translationKey]?.randomElement()
