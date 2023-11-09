@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150C5BFC2AFC7B4300310D62 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C5BFB2AFC7B4300310D62 /* Word.swift */; };
 		1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150C5BFB2AFC7B4300310D62 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
@@ -181,6 +183,7 @@
 				15DABF1C2AFB16FE00D392D2 /* Language.swift */,
 				15DABF1E2AFB180A00D392D2 /* Translation.swift */,
 				15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */,
+				150C5BFB2AFC7B4300310D62 /* Word.swift */,
 			);
 			path = LanguageKit;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			files = (
 				15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */,
 				15DABF222AFB19E900D392D2 /* Italian.swift in Sources */,
+				150C5BFC2AFC7B4300310D62 /* Word.swift in Sources */,
 				15DABF242AFB1BED00D392D2 /* TranslationProvider.swift in Sources */,
 				15DABF1F2AFB180A00D392D2 /* Translation.swift in Sources */,
 			);

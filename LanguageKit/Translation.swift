@@ -8,10 +8,10 @@
 import Foundation
 
 public struct Translation {
-    public let from: (language: Language, text: String)
-    public let to: (language: Language, text: String)
+    public let from: Word
+    public let to: Word
     
-    public init(from: (Language, String), to: (Language, String)) {
+    public init(from: Word, to: Word) {
         self.from = from
         self.to = to
     }
