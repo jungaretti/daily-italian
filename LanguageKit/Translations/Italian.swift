@@ -861,7 +861,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "to amuse"), to: (.Italian, "divertire")),
     Translation(from: (.English, "to tell"), to: (.Italian, "raccontare")),
     Translation(from: (.English, "to turn"), to: (.Italian, "volgere")),
-    Translation(from: (.English, "to drinking"), to: (.Italian, "bere")),
+    Translation(from: (.English, "to drink"), to: (.Italian, "bere")),
     Translation(from: (.English, "to judge"), to: (.Italian, "giudicare")),
     Translation(from: (.English, "to return"), to: (.Italian, "ritornare")),
     Translation(from: (.English, "to produce"), to: (.Italian, "produrre")),
