@@ -658,7 +658,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "quiet"), to: (.Italian, "zitto")),
     Translation(from: (.English, "equal"), to: (.Italian, "uguale")),
     Translation(from: (.English, "average"), to: (.Italian, "medio")),
-    Translation(from: (.English, "good boy"), to: (.Italian, "bravo")),
+    Translation(from: (.English, "well done"), to: (.Italian, "bravo")),
     Translation(from: (.English, "whatever"), to: (.Italian, "qualunque")),
     Translation(from: (.English, "ugly"), to: (.Italian, "brutto")),
     Translation(from: (.English, "extraordinary"), to: (.Italian, "straordinario")),
