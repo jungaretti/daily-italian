@@ -1,14 +1,7 @@
-//
-//  LanguageKitTests.swift
-//  LanguageKitTests
-//
-//  Created by JP Ungaretti on 11/7/23.
-//
-
 import XCTest
-@testable import LanguageKit
+@testable import CoreLanguage
 
-class LanguageKitTests: XCTestCase {
+final class CoreLanguageTests: XCTestCase {
     func testTranslationProviderRandomSingle() {
         let translation = Translation(from: (.English, "love"), to: (.Italian, "amore"))
         let translationProvider = TranslationProvider(translations: [translation])

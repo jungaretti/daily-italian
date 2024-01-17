@@ -7,7 +7,7 @@
 
 import WidgetKit
 import SwiftUI
-import LanguageKit
+import CoreLanguage
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {

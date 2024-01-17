@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import LanguageKit
+import CoreLanguage
 
 struct ContentView: View {
     @State var translation = globalProvider.randomTranslation(from: .English, to: .Italian)

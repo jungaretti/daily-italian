@@ -7,23 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150C5BFC2AFC7B4300310D62 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C5BFB2AFC7B4300310D62 /* Word.swift */; };
-		150C5BFE2AFCC17B00310D62 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = 150C5BFD2AFCC17B00310D62 /* PRIVACY.md */; };
-		1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
 		158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* DailyWidget.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		15DABF092AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
-		15DABF102AFB169000D392D2 /* LanguageKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */; };
-		15DABF142AFB169000D392D2 /* LanguageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; };
-		15DABF152AFB169000D392D2 /* LanguageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15DABF012AFB169000D392D2 /* LanguageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF1C2AFB16FE00D392D2 /* Language.swift */; };
-		15DABF1F2AFB180A00D392D2 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF1E2AFB180A00D392D2 /* Translation.swift */; };
-		15DABF222AFB19E900D392D2 /* Italian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF212AFB19E900D392D2 /* Italian.swift */; };
-		15DABF242AFB1BED00D392D2 /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */; };
+		159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FC92B57A32E0080C3DD /* CoreLanguage */; };
+		159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FCB2B57A34A0080C3DD /* CoreLanguage */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -31,40 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1540CE582AFB2A6800AE9BC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15DABF002AFB169000D392D2;
-			remoteInfo = LanguageKit;
-		};
 		158ECBD52ADC63DB00247626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 158ECBC52ADC63D900247626;
 			remoteInfo = DailyWidgetExtension;
-		};
-		15DABF0A2AFB169000D392D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15DABF002AFB169000D392D2;
-			remoteInfo = LanguageKit;
-		};
-		15DABF0C2AFB169000D392D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15FF32662ADC630E00B6B2AA;
-			remoteInfo = DailyLanguage;
-		};
-		15DABF122AFB169000D392D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15FF325F2ADC630E00B6B2AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15DABF002AFB169000D392D2;
-			remoteInfo = LanguageKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -86,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				15DABF152AFB169000D392D2 /* LanguageKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +56,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		150C5BFB2AFC7B4300310D62 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		150C5BFD2AFCC17B00310D62 /* PRIVACY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,13 +67,7 @@
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
 		159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		15DABF012AFB169000D392D2 /* LanguageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LanguageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKitTests.swift; sourceTree = "<group>"; };
-		15DABF1C2AFB16FE00D392D2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		15DABF1E2AFB180A00D392D2 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
-		15DABF212AFB19E900D392D2 /* Italian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Italian.swift; sourceTree = "<group>"; };
-		15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
+		159D4FC62B57A2400080C3DD /* CoreLanguage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreLanguage; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,24 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1540CE562AFB2A6800AE9BC7 /* LanguageKit.framework in Frameworks */,
+				159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */,
 				158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */,
 				158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15DABEFE2AFB169000D392D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15DABF052AFB169000D392D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15DABF092AFB169000D392D2 /* LanguageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DABF142AFB169000D392D2 /* LanguageKit.framework in Frameworks */,
+				159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,44 +119,15 @@
 			path = DailyWidget;
 			sourceTree = "<group>";
 		};
-		15DABF022AFB169000D392D2 /* LanguageKit */ = {
-			isa = PBXGroup;
-			children = (
-				15DABF202AFB19E000D392D2 /* Translations */,
-				15DABF1C2AFB16FE00D392D2 /* Language.swift */,
-				15DABF1E2AFB180A00D392D2 /* Translation.swift */,
-				15DABF232AFB1BED00D392D2 /* TranslationProvider.swift */,
-				150C5BFB2AFC7B4300310D62 /* Word.swift */,
-			);
-			path = LanguageKit;
-			sourceTree = "<group>";
-		};
-		15DABF0E2AFB169000D392D2 /* LanguageKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				15DABF0F2AFB169000D392D2 /* LanguageKitTests.swift */,
-			);
-			path = LanguageKitTests;
-			sourceTree = "<group>";
-		};
-		15DABF202AFB19E000D392D2 /* Translations */ = {
-			isa = PBXGroup;
-			children = (
-				15DABF212AFB19E900D392D2 /* Italian.swift */,
-			);
-			path = Translations;
-			sourceTree = "<group>";
-		};
 		15FF325E2ADC630E00B6B2AA = {
 			isa = PBXGroup;
 			children = (
+				159D4FC62B57A2400080C3DD /* CoreLanguage */,
 				159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */,
 				150C5BFD2AFCC17B00310D62 /* PRIVACY.md */,
 				155364902AE6E35B00164846 /* README.md */,
 				15FF32692ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBCC2ADC63D900247626 /* DailyWidget */,
-				15DABF022AFB169000D392D2 /* LanguageKit */,
-				15DABF0E2AFB169000D392D2 /* LanguageKitTests */,
 				158ECBC72ADC63D900247626 /* Frameworks */,
 				15FF32682ADC630E00B6B2AA /* Products */,
 			);
@@ -227,8 +138,6 @@
 			children = (
 				15FF32672ADC630E00B6B2AA /* DailyLanguage.app */,
 				158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */,
-				15DABF012AFB169000D392D2 /* LanguageKit.framework */,
-				15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,16 +164,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		15DABEFC2AFB169000D392D2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		158ECBC52ADC63D900247626 /* DailyWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -277,49 +176,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				1540CE592AFB2A6800AE9BC7 /* PBXTargetDependency */,
 			);
 			name = DailyWidgetExtension;
+			packageProductDependencies = (
+				159D4FC92B57A32E0080C3DD /* CoreLanguage */,
+			);
 			productName = DailyWidgetExtension;
 			productReference = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		15DABF002AFB169000D392D2 /* LanguageKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 15DABF1A2AFB169000D392D2 /* Build configuration list for PBXNativeTarget "LanguageKit" */;
-			buildPhases = (
-				15DABEFC2AFB169000D392D2 /* Headers */,
-				15DABEFD2AFB169000D392D2 /* Sources */,
-				15DABEFE2AFB169000D392D2 /* Frameworks */,
-				15DABEFF2AFB169000D392D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LanguageKit;
-			productName = LanguageKit;
-			productReference = 15DABF012AFB169000D392D2 /* LanguageKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		15DABF072AFB169000D392D2 /* LanguageKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 15DABF1B2AFB169000D392D2 /* Build configuration list for PBXNativeTarget "LanguageKitTests" */;
-			buildPhases = (
-				15DABF042AFB169000D392D2 /* Sources */,
-				15DABF052AFB169000D392D2 /* Frameworks */,
-				15DABF062AFB169000D392D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				15DABF0B2AFB169000D392D2 /* PBXTargetDependency */,
-				15DABF0D2AFB169000D392D2 /* PBXTargetDependency */,
-			);
-			name = LanguageKitTests;
-			productName = LanguageKitTests;
-			productReference = 15DABF082AFB169000D392D2 /* LanguageKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		15FF32662ADC630E00B6B2AA /* DailyLanguage */ = {
 			isa = PBXNativeTarget;
@@ -335,9 +199,11 @@
 			);
 			dependencies = (
 				158ECBD62ADC63DB00247626 /* PBXTargetDependency */,
-				15DABF132AFB169000D392D2 /* PBXTargetDependency */,
 			);
 			name = DailyLanguage;
+			packageProductDependencies = (
+				159D4FCB2B57A34A0080C3DD /* CoreLanguage */,
+			);
 			productName = DailyLanguage;
 			productReference = 15FF32672ADC630E00B6B2AA /* DailyLanguage.app */;
 			productType = "com.apple.product-type.application";
@@ -354,14 +220,6 @@
 				TargetAttributes = {
 					158ECBC52ADC63D900247626 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					15DABF002AFB169000D392D2 = {
-						CreatedOnToolsVersion = 15.0.1;
-						LastSwiftMigration = 1500;
-					};
-					15DABF072AFB169000D392D2 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 15FF32662ADC630E00B6B2AA;
 					};
 					15FF32662ADC630E00B6B2AA = {
 						CreatedOnToolsVersion = 15.0;
@@ -383,8 +241,6 @@
 			targets = (
 				15FF32662ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBC52ADC63D900247626 /* DailyWidgetExtension */,
-				15DABF002AFB169000D392D2 /* LanguageKit */,
-				15DABF072AFB169000D392D2 /* LanguageKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,21 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15DABEFF2AFB169000D392D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				150C5BFE2AFCC17B00310D62 /* PRIVACY.md in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15DABF062AFB169000D392D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,26 +275,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15DABEFD2AFB169000D392D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15DABF1D2AFB16FE00D392D2 /* Language.swift in Sources */,
-				15DABF222AFB19E900D392D2 /* Italian.swift in Sources */,
-				150C5BFC2AFC7B4300310D62 /* Word.swift in Sources */,
-				15DABF242AFB1BED00D392D2 /* TranslationProvider.swift in Sources */,
-				15DABF1F2AFB180A00D392D2 /* Translation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15DABF042AFB169000D392D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15DABF102AFB169000D392D2 /* LanguageKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		15FF32632ADC630E00B6B2AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,30 +287,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1540CE592AFB2A6800AE9BC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
-			targetProxy = 1540CE582AFB2A6800AE9BC7 /* PBXContainerItemProxy */;
-		};
 		158ECBD62ADC63DB00247626 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 158ECBC52ADC63D900247626 /* DailyWidgetExtension */;
 			targetProxy = 158ECBD52ADC63DB00247626 /* PBXContainerItemProxy */;
-		};
-		15DABF0B2AFB169000D392D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
-			targetProxy = 15DABF0A2AFB169000D392D2 /* PBXContainerItemProxy */;
-		};
-		15DABF0D2AFB169000D392D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15FF32662ADC630E00B6B2AA /* DailyLanguage */;
-			targetProxy = 15DABF0C2AFB169000D392D2 /* PBXContainerItemProxy */;
-		};
-		15DABF132AFB169000D392D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15DABF002AFB169000D392D2 /* LanguageKit */;
-			targetProxy = 15DABF122AFB169000D392D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -567,133 +368,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		15DABF162AFB169000D392D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.LanguageKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		15DABF172AFB169000D392D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.LanguageKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		15DABF182AFB169000D392D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.LanguageKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLanguage";
-			};
-			name = Debug;
-		};
-		15DABF192AFB169000D392D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XDGS844A6P;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.LanguageKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLanguage";
 			};
 			name = Release;
 		};
@@ -903,24 +577,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15DABF1A2AFB169000D392D2 /* Build configuration list for PBXNativeTarget "LanguageKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15DABF162AFB169000D392D2 /* Debug */,
-				15DABF172AFB169000D392D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		15DABF1B2AFB169000D392D2 /* Build configuration list for PBXNativeTarget "LanguageKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15DABF182AFB169000D392D2 /* Debug */,
-				15DABF192AFB169000D392D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		15FF32622ADC630E00B6B2AA /* Build configuration list for PBXProject "DailyLanguage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -940,6 +596,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		159D4FC92B57A32E0080C3DD /* CoreLanguage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreLanguage;
+		};
+		159D4FCB2B57A34A0080C3DD /* CoreLanguage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreLanguage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15FF325F2ADC630E00B6B2AA /* Project object */;
 }
