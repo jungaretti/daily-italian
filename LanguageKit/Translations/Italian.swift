@@ -1161,7 +1161,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "in conclusion"), to: (.Italian, "insomma")),
     Translation(from: (.English, "on"), to: (.Italian, "addosso")),
     Translation(from: (.English, "At"), to: (.Italian, "presso")),
-    Translation(from: (.English, "in the meantime"), to: (.Italian, "intanto")),
+    Translation(from: (.English, "meanwhile"), to: (.Italian, "intanto")),
     Translation(from: (.English, "even"), to: (.Italian, "addirittura")),
     Translation(from: (.English, "long"), to: (.Italian, "lungo")),
     Translation(from: (.English, "as long as"), to: (.Italian, "finché")),
