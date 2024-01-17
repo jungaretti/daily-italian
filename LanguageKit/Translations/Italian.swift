@@ -494,7 +494,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "good"), to: (.Italian, "buono")),
     Translation(from: (.English, "this"), to: (.Italian, "questo")),
     Translation(from: (.English, "your"), to: (.Italian, "tuo")),
-    Translation(from: (.English, "one"), to: (.Italian, "quello")),
+    Translation(from: (.English, "that"), to: (.Italian, "quello")),
     Translation(from: (.English, "nobody"), to: (.Italian, "nessuno")),
     Translation(from: (.English, "more"), to: (.Italian, "più")),
     Translation(from: (.English, "any"), to: (.Italian, "alcuno")),
