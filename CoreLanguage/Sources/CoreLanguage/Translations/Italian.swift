@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  LanguageKit
-//
-//  Created by JP Ungaretti on 11/7/23.
-//
-
 import Foundation
 
 let italianTranslations: [Translation] = [

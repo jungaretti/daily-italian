@@ -1,10 +1,3 @@
-//
-//  TranslationProvider.swift
-//  LanguageKit
-//
-//  Created by JP Ungaretti on 11/7/23.
-//
-
 import Foundation
 
 private struct TranslationKey: Hashable {

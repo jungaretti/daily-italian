@@ -1,10 +1,3 @@
-//
-//  Language.swift
-//  LanguageKit
-//
-//  Created by JP Ungaretti on 11/7/23.
-//
-
 import Foundation
 
 public enum Language: String, Hashable {
