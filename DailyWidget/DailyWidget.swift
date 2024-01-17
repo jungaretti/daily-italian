@@ -47,7 +47,7 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let translation: Translation
+    let translation: CoreLanguage.Translation
 }
 
 struct DailyWidgetEntryView : View {
@@ -97,11 +97,11 @@ struct DailyWidget: Widget {
 #Preview(as: .systemSmall) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
 
 #Preview(as: .systemMedium) {
     DailyWidget()
 } timeline: {
-    SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
