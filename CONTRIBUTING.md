@@ -8,7 +8,7 @@ Daily Italian is a simple app. You can help me build it by reporting and fixing 
 
 ## Fix a Translation Mistake
 
-You can find all of Daily Italian's translations in the [`CoreLanguage/Translations`](https://github.com/jungaretti/daily-language/tree/main/CoreLanguage/Translations) directory. Follow these steps to fix a translation mistake:
+You can find all of Daily Italian's translations in the [`CoreLanguage/Translations`](https://github.com/jungaretti/daily-language/tree/main/CoreLanguage/Sources/CoreLanguage/Translations) directory. Follow these steps to fix a translation mistake:
 
 1. Find the mistake in its language's `.swift` file. For example, [line 16 of `Italian.swift`](https://github.com/jungaretti/daily-language/blob/main/CoreLanguage/Translations/Italian.swift#L16).
 2. [Edit the file](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) and fix the translation error. You can [edit the file on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) or [clone this repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and use your favorite editor.
