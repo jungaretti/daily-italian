@@ -1018,7 +1018,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "neither"), to: (.Italian, "ne")),
     Translation(from: (.English, "of"), to: (.Italian, "di")),
     Translation(from: (.English, "she"), to: (.Italian, "lei")),
-    Translation(from: (.English, "is"), to: (.Italian, "e")),
+    Translation(from: (.English, "is"), to: (.Italian, "è")),
     Translation(from: (.English, "yet"), to: (.Italian, "ancora")),
     Translation(from: (.English, "to"), to: (.Italian, "a")),
     Translation(from: (.English, "you"), to: (.Italian, "tu")),
