@@ -13,9 +13,12 @@ struct TranslationWidget: Widget {
     let kind: String = "DailyWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: TranslationProvider()) { entry in
-            TranslationView(translation: entry.translation)
-                .containerBackground(.fill.tertiary, for: .widget)
+        AppIntentConfiguration(
+            kind: kind,
+            intent: TranslationIntent.self,
+            provider: TranslationProvider()) { entry in
+                TranslationView(translation: entry.translation)
+                    .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Random Word")
         .description("Learn new words every day.")
