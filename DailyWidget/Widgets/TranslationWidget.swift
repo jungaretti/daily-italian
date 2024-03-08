@@ -9,12 +9,12 @@ import WidgetKit
 import SwiftUI
 import CoreLanguage
 
-struct DailyWidget: Widget {
+struct TranslationWidget: Widget {
     let kind: String = "DailyWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            WidgetView(entry: entry)
+        StaticConfiguration(kind: kind, provider: TranslationProvider()) { entry in
+            TranslationView(translation: entry.translation)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Random Word")
@@ -24,13 +24,13 @@ struct DailyWidget: Widget {
 }
 
 #Preview(as: .systemSmall) {
-    DailyWidget()
+    TranslationWidget()
 } timeline: {
-    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
 
 #Preview(as: .systemMedium) {
-    DailyWidget()
+    TranslationWidget()
 } timeline: {
-    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }

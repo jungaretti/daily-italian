@@ -11,6 +11,6 @@ import SwiftUI
 @main
 struct DailyWidgetBundle: WidgetBundle {
     var body: some Widget {
-        DailyWidget()
+        TranslationWidget()
     }
 }

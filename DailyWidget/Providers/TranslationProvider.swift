@@ -9,15 +9,15 @@ import WidgetKit
 import SwiftUI
 import CoreLanguage
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
+struct TranslationProvider: TimelineProvider {
+    func placeholder(in context: Context) -> TranslationEntry {
         getRandomEntryFor(date: .now)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry: SimpleEntry
+    func getSnapshot(in context: Context, completion: @escaping (TranslationEntry) -> ()) {
+        let entry: Entry
         if context.isPreview {
-            entry = SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+            entry = Entry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
         } else {
             entry = getRandomEntryFor(date: .now)
         }
@@ -25,8 +25,8 @@ struct Provider: TimelineProvider {
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+    func getTimeline(in context: Context, completion: @escaping (Timeline<TranslationEntry>) -> ()) {
+        var entries: [Entry] = []
 
         // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
@@ -39,8 +39,8 @@ struct Provider: TimelineProvider {
         completion(timeline)
     }
 
-    private func getRandomEntryFor(date: Date) -> SimpleEntry {
+    private func getRandomEntryFor(date: Date) -> TranslationEntry {
         let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)
-        return SimpleEntry(date: date, translation: entryTranslation)
+        return Entry(date: date, translation: entryTranslation)
     }
 }

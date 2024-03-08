@@ -9,13 +9,13 @@ import WidgetKit
 import SwiftUI
 import CoreLanguage
 
-struct WidgetView : View {
-    var entry: Provider.Entry
+struct TranslationView : View {
+    var translation: Translation
 
     var body: some View {
         VStack {
             HStack {
-                Text(entry.translation.to.text)
+                Text(translation.to.text)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .lineLimit(1)
@@ -23,7 +23,7 @@ struct WidgetView : View {
                 Spacer()
             }
             HStack {
-                Text(entry.translation.from.text)
+                Text(translation.from.text)
                     .font(.system(.body))
                 Spacer()
             }
@@ -31,7 +31,7 @@ struct WidgetView : View {
             Spacer()
 
             HStack {
-                Text(String(entry.translation.to.language.flagEmoji))
+                Text(String(translation.to.language.flagEmoji))
                     .font(.title)
                 Spacer()
             }

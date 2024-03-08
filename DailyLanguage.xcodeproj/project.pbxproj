@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15082D5A2B9AE1540068335A /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D592B9AE13C0068335A /* Provider.swift */; };
-		15082D5D2B9AE1BF0068335A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D5B2B9AE1BF0068335A /* Entry.swift */; };
-		15082D5F2B9AE3340068335A /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D5E2B9AE3340068335A /* WidgetView.swift */; };
+		15082D5A2B9AE1540068335A /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D592B9AE13C0068335A /* TranslationProvider.swift */; };
+		15082D5F2B9AE3340068335A /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D5E2B9AE3340068335A /* TranslationView.swift */; };
+		150EE5A42B9AE6C900EDBD65 /* TranslationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
-		158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* DailyWidget.swift */; };
+		158ECBD02ADC63D900247626 /* TranslationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* TranslationWidget.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FC92B57A32E0080C3DD /* CoreLanguage */; };
@@ -59,16 +59,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		15082D592B9AE13C0068335A /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		15082D5B2B9AE1BF0068335A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		15082D5E2B9AE3340068335A /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		15082D592B9AE13C0068335A /* TranslationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationProvider.swift; sourceTree = "<group>"; };
+		15082D5E2B9AE3340068335A /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		150C5BFD2AFCC17B00310D62 /* PRIVACY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
+		150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntry.swift; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
 		158ECBCA2ADC63D900247626 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
 		158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWidgetBundle.swift; sourceTree = "<group>"; };
-		158ECBCF2ADC63D900247626 /* DailyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWidget.swift; sourceTree = "<group>"; };
+		158ECBCF2ADC63D900247626 /* TranslationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidget.swift; sourceTree = "<group>"; };
 		158ECBD12ADC63DB00247626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
@@ -104,6 +104,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150EE5A02B9AE52600EDBD65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15082D5E2B9AE3340068335A /* TranslationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		150EE5A12B9AE52A00EDBD65 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				15082D592B9AE13C0068335A /* TranslationProvider.swift */,
+				150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		150EE5A22B9AE63600EDBD65 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				158ECBCF2ADC63D900247626 /* TranslationWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		158ECBC72ADC63D900247626 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,13 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */,
-				158ECBCF2ADC63D900247626 /* DailyWidget.swift */,
+				150EE5A12B9AE52A00EDBD65 /* Providers */,
+				150EE5A02B9AE52600EDBD65 /* Views */,
+				150EE5A22B9AE63600EDBD65 /* Widgets */,
 				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
 				158ECBD32ADC63DB00247626 /* Info.plist */,
 				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
-				15082D592B9AE13C0068335A /* Provider.swift */,
-				15082D5B2B9AE1BF0068335A /* Entry.swift */,
-				15082D5E2B9AE3340068335A /* WidgetView.swift */,
 			);
 			path = DailyWidget;
 			sourceTree = "<group>";
@@ -279,11 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15082D5D2B9AE1BF0068335A /* Entry.swift in Sources */,
-				15082D5A2B9AE1540068335A /* Provider.swift in Sources */,
+				15082D5A2B9AE1540068335A /* TranslationProvider.swift in Sources */,
 				158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */,
-				15082D5F2B9AE3340068335A /* WidgetView.swift in Sources */,
-				158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */,
+				15082D5F2B9AE3340068335A /* TranslationView.swift in Sources */,
+				150EE5A42B9AE6C900EDBD65 /* TranslationEntry.swift in Sources */,
+				158ECBD02ADC63D900247626 /* TranslationWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
