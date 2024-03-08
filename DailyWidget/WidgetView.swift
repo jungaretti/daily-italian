@@ -9,7 +9,7 @@ import WidgetKit
 import SwiftUI
 import CoreLanguage
 
-struct DailyWidgetEntryView : View {
+struct WidgetView : View {
     var entry: Provider.Entry
 
     var body: some View {
