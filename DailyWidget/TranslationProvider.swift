@@ -32,11 +32,11 @@ struct TranslationProvider: AppIntentTimelineProvider {
     func timeline(for configuration: TranslationIntent, in context: Context) async -> Timeline<TranslationEntry> {
         var entries: [Entry] = []
 
-        // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
-        for hourOffset in 0 ..< 24 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)
-            entries.append(getRandomEntryFor(date: entryDate!))
+        for intervalMultiple in 0 ..< 200 {
+            let entryDate = currentDate.addingTimeInterval(configuration.interval.timeInterval * Double(intervalMultiple))
+            let entry = getRandomEntryFor(date: entryDate)
+            entries.append(entry)
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
