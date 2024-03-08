@@ -10,24 +10,6 @@ import WidgetKit
 import SwiftUI
 import CoreLanguage
 
-enum RefreshInterval: String, AppEnum {
-    case hourly, daily
-
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Refresh Interval"
-    static var caseDisplayRepresentations: [RefreshInterval : DisplayRepresentation] = [
-        .hourly: "Every Hour",
-        .daily: "Every Day",
-    ]
-}
-
-struct TranslationIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource = "Translation"
-    static var description = IntentDescription("Shows a translation")
-
-    @Parameter(title: "Refresh", default: .hourly)
-    var interval: RefreshInterval
-}
-
 struct TranslationProvider: AppIntentTimelineProvider {
     typealias Entry = TranslationEntry
     typealias Intent = TranslationIntent

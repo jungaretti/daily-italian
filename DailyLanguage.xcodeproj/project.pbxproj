@@ -10,6 +10,7 @@
 		15082D5A2B9AE1540068335A /* TranslationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D592B9AE13C0068335A /* TranslationProvider.swift */; };
 		15082D5F2B9AE3340068335A /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15082D5E2B9AE3340068335A /* TranslationView.swift */; };
 		150EE5A42B9AE6C900EDBD65 /* TranslationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */; };
+		1579E5162B9AEC4F00B070E9 /* TranslationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579E5152B9AEC4F00B070E9 /* TranslationIntent.swift */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
@@ -64,6 +65,7 @@
 		150C5BFD2AFCC17B00310D62 /* PRIVACY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntry.swift; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1579E5152B9AEC4F00B070E9 /* TranslationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationIntent.swift; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
 		158ECBCA2ADC63D900247626 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
@@ -104,31 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		150EE5A02B9AE52600EDBD65 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				15082D5E2B9AE3340068335A /* TranslationView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		150EE5A12B9AE52A00EDBD65 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				15082D592B9AE13C0068335A /* TranslationProvider.swift */,
-				150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */,
-			);
-			path = Providers;
-			sourceTree = "<group>";
-		};
-		150EE5A22B9AE63600EDBD65 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				158ECBCF2ADC63D900247626 /* TranslationWidget.swift */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
 		158ECBC72ADC63D900247626 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */,
-				150EE5A12B9AE52A00EDBD65 /* Providers */,
-				150EE5A02B9AE52600EDBD65 /* Views */,
-				150EE5A22B9AE63600EDBD65 /* Widgets */,
+				150EE5A32B9AE6C900EDBD65 /* TranslationEntry.swift */,
+				1579E5152B9AEC4F00B070E9 /* TranslationIntent.swift */,
+				15082D592B9AE13C0068335A /* TranslationProvider.swift */,
+				15082D5E2B9AE3340068335A /* TranslationView.swift */,
+				158ECBCF2ADC63D900247626 /* TranslationWidget.swift */,
 				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
-				158ECBD32ADC63DB00247626 /* Info.plist */,
 				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
+				158ECBD32ADC63DB00247626 /* Info.plist */,
 			);
 			path = DailyWidget;
 			sourceTree = "<group>";
@@ -308,6 +287,7 @@
 				15082D5F2B9AE3340068335A /* TranslationView.swift in Sources */,
 				150EE5A42B9AE6C900EDBD65 /* TranslationEntry.swift in Sources */,
 				158ECBD02ADC63D900247626 /* TranslationWidget.swift in Sources */,
+				1579E5162B9AEC4F00B070E9 /* TranslationIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
