@@ -66,6 +66,7 @@
 		158ECBD12ADC63DB00247626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
+		159637A02B9D0E53004C8BE5 /* DailyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyLibrary; sourceTree = "<group>"; };
 		159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		159D4FC62B57A2400080C3DD /* CoreLanguage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreLanguage; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +123,7 @@
 		15FF325E2ADC630E00B6B2AA = {
 			isa = PBXGroup;
 			children = (
+				159637A02B9D0E53004C8BE5 /* DailyLibrary */,
 				159D4FC62B57A2400080C3DD /* CoreLanguage */,
 				159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */,
 				150C5BFD2AFCC17B00310D62 /* PRIVACY.md */,
