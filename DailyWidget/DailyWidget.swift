@@ -9,15 +9,15 @@ import WidgetKit
 import SwiftUI
 import DailyLibrary
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
+struct TranslationTimelineProvider: TimelineProvider {
+    func placeholder(in context: Context) -> TranslationTimelineEntry {
         getRandomEntryFor(date: .now)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry: SimpleEntry
+    func getSnapshot(in context: Context, completion: @escaping (TranslationTimelineEntry) -> ()) {
+        let entry: TranslationTimelineEntry
         if context.isPreview {
-            entry = SimpleEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+            entry = TranslationTimelineEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
         } else {
             entry = getRandomEntryFor(date: .now)
         }
@@ -26,7 +26,7 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+        var entries: [TranslationTimelineEntry] = []
 
         // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
@@ -39,19 +39,19 @@ struct Provider: TimelineProvider {
         completion(timeline)
     }
 
-    private func getRandomEntryFor(date: Date) -> SimpleEntry {
+    private func getRandomEntryFor(date: Date) -> TranslationTimelineEntry {
         let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)
-        return SimpleEntry(date: date, translation: entryTranslation)
+        return TranslationTimelineEntry(date: date, translation: entryTranslation)
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct TranslationTimelineEntry: TimelineEntry {
     let date: Date
     let translation: DailyLibrary.Translation
 }
 
-struct DailyWidgetEntryView : View {
-    var entry: Provider.Entry
+struct TranslationView : View {
+    var entry: TranslationTimelineProvider.Entry
 
     var body: some View {
         VStack {
@@ -80,12 +80,12 @@ struct DailyWidgetEntryView : View {
     }
 }
 
-struct DailyWidget: Widget {
+struct TranslationWidget: Widget {
     let kind: String = "DailyWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            DailyWidgetEntryView(entry: entry)
+        StaticConfiguration(kind: kind, provider: TranslationTimelineProvider()) { entry in
+            TranslationView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Random Word")
@@ -95,13 +95,13 @@ struct DailyWidget: Widget {
 }
 
 #Preview(as: .systemSmall) {
-    DailyWidget()
+    TranslationWidget()
 } timeline: {
-    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationTimelineEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
 
 #Preview(as: .systemMedium) {
-    DailyWidget()
+    TranslationWidget()
 } timeline: {
-    SimpleEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationTimelineEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
 }
