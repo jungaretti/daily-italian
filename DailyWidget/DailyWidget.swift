@@ -9,11 +9,6 @@ import WidgetKit
 import SwiftUI
 import DailyLibrary
 
-struct TranslationTimelineEntry: TimelineEntry {
-    let date: Date
-    let translation: DailyLibrary.Translation
-}
-
 struct TranslationView : View {
     var entry: TranslationTimelineProvider.Entry
 
