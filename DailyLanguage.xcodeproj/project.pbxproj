@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150E2C912B9D12280033EABA /* DailyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 150E2C902B9D12280033EABA /* DailyLibrary */; };
+		150E2C932B9D122E0033EABA /* DailyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 150E2C922B9D122E0033EABA /* DailyLibrary */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
 		158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* DailyWidget.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FC92B57A32E0080C3DD /* CoreLanguage */; };
-		159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FCB2B57A34A0080C3DD /* CoreLanguage */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -82,9 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */,
 				158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */,
 				158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */,
+				150E2C912B9D12280033EABA /* DailyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */,
+				150E2C932B9D122E0033EABA /* DailyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			);
 			name = DailyWidgetExtension;
 			packageProductDependencies = (
-				159D4FC92B57A32E0080C3DD /* CoreLanguage */,
+				150E2C902B9D12280033EABA /* DailyLibrary */,
 			);
 			productName = DailyWidgetExtension;
 			productReference = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */;
@@ -204,7 +204,7 @@
 			);
 			name = DailyLanguage;
 			packageProductDependencies = (
-				159D4FCB2B57A34A0080C3DD /* CoreLanguage */,
+				150E2C922B9D122E0033EABA /* DailyLibrary */,
 			);
 			productName = DailyLanguage;
 			productReference = 15FF32672ADC630E00B6B2AA /* DailyLanguage.app */;
@@ -606,13 +606,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		159D4FC92B57A32E0080C3DD /* CoreLanguage */ = {
+		150E2C902B9D12280033EABA /* DailyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLanguage;
+			productName = DailyLibrary;
 		};
-		159D4FCB2B57A34A0080C3DD /* CoreLanguage */ = {
+		150E2C922B9D122E0033EABA /* DailyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLanguage;
+			productName = DailyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

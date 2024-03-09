@@ -7,7 +7,7 @@
 
 import WidgetKit
 import SwiftUI
-import CoreLanguage
+import DailyLibrary
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -47,7 +47,7 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let translation: CoreLanguage.Translation
+    let translation: DailyLibrary.Translation
 }
 
 struct DailyWidgetEntryView : View {
