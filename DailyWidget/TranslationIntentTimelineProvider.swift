@@ -1,19 +1,23 @@
 //
-//  TranslationTimelineProvider.swift
+//  TranslationIntentTimelineProvider.swift
 //  DailyWidgetExtension
 //
 //  Created by JP Ungaretti on 3/9/24.
 //
 
+import Foundation
 import WidgetKit
 import DailyLibrary
 
-struct TranslationTimelineProvider: TimelineProvider {
+struct TranslationIntentTimelineProvider: AppIntentTimelineProvider {
+    typealias Entry = TranslationTimelineEntry
+    typealias Intent = TranslationWidgetConfigurationIntent
+
     func placeholder(in context: Context) -> TranslationTimelineEntry {
         getRandomEntryFor(date: .now)
     }
-
-    func getSnapshot(in context: Context, completion: @escaping (TranslationTimelineEntry) -> ()) {
+    
+    func snapshot(for configuration: TranslationWidgetConfigurationIntent, in context: Context) async -> TranslationTimelineEntry {
         let entry: TranslationTimelineEntry
         if context.isPreview {
             entry = TranslationTimelineEntry(date: .now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
@@ -21,10 +25,10 @@ struct TranslationTimelineProvider: TimelineProvider {
             entry = getRandomEntryFor(date: .now)
         }
 
-        completion(entry)
+        return entry
     }
-
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    
+    func timeline(for configuration: TranslationWidgetConfigurationIntent, in context: Context) async -> Timeline<TranslationTimelineEntry> {
         var entries: [TranslationTimelineEntry] = []
 
         // Generate a timeline entry for each of the next 24 hours
@@ -35,9 +39,9 @@ struct TranslationTimelineProvider: TimelineProvider {
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        return timeline
     }
-
+    
     private func getRandomEntryFor(date: Date) -> TranslationTimelineEntry {
         let entryTranslation = globalProvider.randomTranslation(from: .English, to: .Italian)
         return TranslationTimelineEntry(date: date, translation: entryTranslation)

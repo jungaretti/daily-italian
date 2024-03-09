@@ -9,7 +9,7 @@ import SwiftUI
 import DailyLibrary
 
 struct TranslationView : View {
-    var entry: TranslationTimelineProvider.Entry
+    var entry: TranslationIntentTimelineProvider.Entry
 
     var body: some View {
         VStack {
