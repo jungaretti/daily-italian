@@ -117,13 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */,
-				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
-				158ECBD32ADC63DB00247626 /* Info.plist */,
-				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
 				150E2C962B9D153B0033EABA /* TranslationTimelineProvider.swift */,
 				150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */,
 				150E2C9A2B9D15F90033EABA /* TranslationView.swift */,
 				150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */,
+				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
+				158ECBD32ADC63DB00247626 /* Info.plist */,
+				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
 			);
 			path = DailyWidget;
 			sourceTree = "<group>";
