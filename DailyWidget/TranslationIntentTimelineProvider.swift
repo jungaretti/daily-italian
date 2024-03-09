@@ -29,17 +29,17 @@ struct TranslationIntentTimelineProvider: AppIntentTimelineProvider {
     }
     
     func timeline(for configuration: TranslationWidgetConfigurationIntent, in context: Context) async -> Timeline<TranslationTimelineEntry> {
-        var entries: [TranslationTimelineEntry] = []
-
-        // Generate a timeline entry for each of the next 24 hours
         let currentDate = Date()
-        for hourOffset in 0 ..< 24 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)
-            entries.append(getRandomEntryFor(date: entryDate!))
+        let timelineDates = (0 ..< 40).map { timelineIndex in
+            let indexToTimeInterval: Double = configuration.interval.timeInterval * Double(timelineIndex)
+            return currentDate.addingTimeInterval(indexToTimeInterval)
         }
 
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        return timeline
+        let entries = timelineDates.map { entryDate in
+            getRandomEntryFor(date: entryDate)
+        }
+
+        return Timeline(entries: entries, policy: .atEnd)
     }
     
     private func getRandomEntryFor(date: Date) -> TranslationTimelineEntry {
