@@ -12,6 +12,7 @@
 		150E2C972B9D153B0033EABA /* TranslationTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C962B9D153B0033EABA /* TranslationTimelineProvider.swift */; };
 		150E2C992B9D15B20033EABA /* TranslationTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */; };
 		150E2C9B2B9D15F90033EABA /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9A2B9D15F90033EABA /* TranslationView.swift */; };
+		150E2C9D2B9D166B0033EABA /* TranslationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
@@ -63,6 +64,7 @@
 		150E2C962B9D153B0033EABA /* TranslationTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTimelineProvider.swift; sourceTree = "<group>"; };
 		150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTimelineEntry.swift; sourceTree = "<group>"; };
 		150E2C9A2B9D15F90033EABA /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
+		150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidget.swift; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
@@ -124,6 +126,7 @@
 				150E2C962B9D153B0033EABA /* TranslationTimelineProvider.swift */,
 				150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */,
 				150E2C9A2B9D15F90033EABA /* TranslationView.swift */,
+				150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */,
 			);
 			path = DailyWidget;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				150E2C9B2B9D15F90033EABA /* TranslationView.swift in Sources */,
 				158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */,
 				150E2C972B9D153B0033EABA /* TranslationTimelineProvider.swift in Sources */,
+				150E2C9D2B9D166B0033EABA /* TranslationWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
