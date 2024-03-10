@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150E2C912B9D12280033EABA /* DailyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 150E2C902B9D12280033EABA /* DailyLibrary */; };
+		150E2C932B9D122E0033EABA /* DailyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 150E2C922B9D122E0033EABA /* DailyLibrary */; };
+		150E2C992B9D15B20033EABA /* TranslationTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */; };
+		150E2C9B2B9D15F90033EABA /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9A2B9D15F90033EABA /* TranslationView.swift */; };
+		150E2C9D2B9D166B0033EABA /* TranslationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */; };
+		150E2C9F2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */; };
+		150E2CA12B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2CA02B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
-		158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCF2ADC63D900247626 /* DailyWidget.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FC92B57A32E0080C3DD /* CoreLanguage */; };
-		159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */ = {isa = PBXBuildFile; productRef = 159D4FCB2B57A34A0080C3DD /* CoreLanguage */; };
 		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
@@ -57,17 +61,21 @@
 
 /* Begin PBXFileReference section */
 		150C5BFD2AFCC17B00310D62 /* PRIVACY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
+		150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTimelineEntry.swift; sourceTree = "<group>"; };
+		150E2C9A2B9D15F90033EABA /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
+		150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidget.swift; sourceTree = "<group>"; };
+		150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidgetConfigurationIntent.swift; sourceTree = "<group>"; };
+		150E2CA02B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationIntentTimelineProvider.swift; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
 		158ECBCA2ADC63D900247626 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
 		158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWidgetBundle.swift; sourceTree = "<group>"; };
-		158ECBCF2ADC63D900247626 /* DailyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWidget.swift; sourceTree = "<group>"; };
 		158ECBD12ADC63DB00247626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
+		159637A02B9D0E53004C8BE5 /* DailyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyLibrary; sourceTree = "<group>"; };
 		159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		159D4FC62B57A2400080C3DD /* CoreLanguage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreLanguage; sourceTree = "<group>"; };
 		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,9 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159D4FCA2B57A32E0080C3DD /* CoreLanguage in Frameworks */,
 				158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */,
 				158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */,
+				150E2C912B9D12280033EABA /* DailyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159D4FCC2B57A34A0080C3DD /* CoreLanguage in Frameworks */,
+				150E2C932B9D122E0033EABA /* DailyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */,
-				158ECBCF2ADC63D900247626 /* DailyWidget.swift */,
+				150E2CA02B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift */,
+				150E2C982B9D15B20033EABA /* TranslationTimelineEntry.swift */,
+				150E2C9A2B9D15F90033EABA /* TranslationView.swift */,
+				150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */,
+				150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */,
 				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
 				158ECBD32ADC63DB00247626 /* Info.plist */,
 				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
@@ -122,12 +134,12 @@
 		15FF325E2ADC630E00B6B2AA = {
 			isa = PBXGroup;
 			children = (
-				159D4FC62B57A2400080C3DD /* CoreLanguage */,
+				155364902AE6E35B00164846 /* README.md */,
 				159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */,
 				150C5BFD2AFCC17B00310D62 /* PRIVACY.md */,
-				155364902AE6E35B00164846 /* README.md */,
 				15FF32692ADC630E00B6B2AA /* DailyLanguage */,
 				158ECBCC2ADC63D900247626 /* DailyWidget */,
+				159637A02B9D0E53004C8BE5 /* DailyLibrary */,
 				158ECBC72ADC63D900247626 /* Frameworks */,
 				15FF32682ADC630E00B6B2AA /* Products */,
 			);
@@ -179,7 +191,7 @@
 			);
 			name = DailyWidgetExtension;
 			packageProductDependencies = (
-				159D4FC92B57A32E0080C3DD /* CoreLanguage */,
+				150E2C902B9D12280033EABA /* DailyLibrary */,
 			);
 			productName = DailyWidgetExtension;
 			productReference = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */;
@@ -202,7 +214,7 @@
 			);
 			name = DailyLanguage;
 			packageProductDependencies = (
-				159D4FCB2B57A34A0080C3DD /* CoreLanguage */,
+				150E2C922B9D122E0033EABA /* DailyLibrary */,
 			);
 			productName = DailyLanguage;
 			productReference = 15FF32672ADC630E00B6B2AA /* DailyLanguage.app */;
@@ -271,7 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */,
-				158ECBD02ADC63D900247626 /* DailyWidget.swift in Sources */,
+				150E2C992B9D15B20033EABA /* TranslationTimelineEntry.swift in Sources */,
+				150E2C9B2B9D15F90033EABA /* TranslationView.swift in Sources */,
+				150E2CA12B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift in Sources */,
+				150E2C9F2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift in Sources */,
+				150E2C9D2B9D166B0033EABA /* TranslationWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +338,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLanguage.DailyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -361,7 +377,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLanguage.DailyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -519,7 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -560,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jungaretti.DailyLanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -604,13 +620,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		159D4FC92B57A32E0080C3DD /* CoreLanguage */ = {
+		150E2C902B9D12280033EABA /* DailyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLanguage;
+			productName = DailyLibrary;
 		};
-		159D4FCB2B57A34A0080C3DD /* CoreLanguage */ = {
+		150E2C922B9D122E0033EABA /* DailyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CoreLanguage;
+			productName = DailyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
