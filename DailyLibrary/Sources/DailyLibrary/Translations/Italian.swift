@@ -112,7 +112,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "will"), to: (.Italian, "volontà")),
     Translation(from: (.English, "finger"), to: (.Italian, "dito")),
     Translation(from: (.English, "face"), to: (.Italian, "volto")),
-    Translation(from: (.English, "Start"), to: (.Italian, "inizio")),
+    Translation(from: (.English, "beginning"), to: (.Italian, "inizio")),
     Translation(from: (.English, "basis"), to: (.Italian, "base")),
     Translation(from: (.English, "program"), to: (.Italian, "programma")),
     Translation(from: (.English, "character"), to: (.Italian, "carattere")),
