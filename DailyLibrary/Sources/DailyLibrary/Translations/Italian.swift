@@ -1118,7 +1118,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "therefore"), to: (.Italian, "perciò")),
     Translation(from: (.English, "someone"), to: (.Italian, "qualcuno")),
     Translation(from: (.English, "of course"), to: (.Italian, "naturalmente")),
-    Translation(from: (.English, "come on"), to: (.Italian, "avanti")),
+    Translation(from: (.English, "ahead"), to: (.Italian, "avanti")),
     Translation(from: (.English, "next"), to: (.Italian, "accanto")),
     Translation(from: (.English, "very"), to: (.Italian, "assai")),
     Translation(from: (.English, "but yet"), to: (.Italian, "eppure")),
