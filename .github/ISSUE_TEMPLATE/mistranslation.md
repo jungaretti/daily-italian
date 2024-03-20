@@ -1,7 +1,7 @@
 ---
 name: Mistranslation
 about: Report a mistranslation or typo
-title: 'Mistranslation:'
+title: 'Mistranslation: '
 labels: bug
 assignees: ''
 
