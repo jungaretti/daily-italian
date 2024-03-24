@@ -743,7 +743,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "to push"), to: (.Italian, "spingere")),
     Translation(from: (.English, "to lose"), to: (.Italian, "perdere")),
     Translation(from: (.English, "to greet"), to: (.Italian, "salutare")),
-    Translation(from: (.English, "to make (big, small..)"), to: (.Italian, "rendere")),
+    Translation(from: (.English, "to make"), to: (.Italian, "rendere")),
     Translation(from: (.English, "to hear"), to: (.Italian, "udire")),
     Translation(from: (.English, "to run"), to: (.Italian, "correre")),
     Translation(from: (.English, "to stick up for"), to: (.Italian, "difendere")),
