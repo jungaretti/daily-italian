@@ -271,7 +271,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "construction"), to: (.Italian, "costruzione")),
     Translation(from: (.English, "look"), to: (.Italian, "sguardo")),
     Translation(from: (.English, "Revolution"), to: (.Italian, "rivoluzione")),
-    Translation(from: (.English, "report"), to: (.Italian, "relazione")),
+    Translation(from: (.English, "relationship"), to: (.Italian, "relazione")),
     Translation(from: (.English, "aunt"), to: (.Italian, "zia")),
     Translation(from: (.English, "class"), to: (.Italian, "classe")),
     Translation(from: (.English, "comparison"), to: (.Italian, "confronto")),
