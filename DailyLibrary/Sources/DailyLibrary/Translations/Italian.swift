@@ -628,7 +628,7 @@ let italianTranslations: [Translation] = [
     Translation(from: (.English, "English"), to: (.Italian, "inglese")),
     Translation(from: (.English, "serious"), to: (.Italian, "serio")),
     Translation(from: (.English, "stationary"), to: (.Italian, "fermo")),
-    Translation(from: (.English, "here I'm"), to: (.Italian, "presente")),
+    Translation(from: (.English, "present"), to: (.Italian, "presente")),
     Translation(from: (.English, "usual"), to: (.Italian, "solito")),
     Translation(from: (.English, "best"), to: (.Italian, "migliore")),
     Translation(from: (.English, "dark"), to: (.Italian, "buio")),
