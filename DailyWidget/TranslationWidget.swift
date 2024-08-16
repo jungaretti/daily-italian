@@ -26,14 +26,16 @@ struct TranslationWidget: Widget {
     }
 }
 
+let hello = Translation(from: (.english, "hello"), to: (.italian, "ciao"))
+
 #Preview(as: .systemSmall) {
     TranslationWidget()
 } timeline: {
-    TranslationTimelineEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationTimelineEntry(date: Date.now, translation: hello)
 }
 
 #Preview(as: .systemMedium) {
     TranslationWidget()
 } timeline: {
-    TranslationTimelineEntry(date: Date.now, translation: Translation(from: Language.English.hello, to: Language.Italian.hello))
+    TranslationTimelineEntry(date: Date.now, translation: hello)
 }

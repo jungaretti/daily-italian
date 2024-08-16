@@ -14,7 +14,7 @@ struct TranslationView : View {
     var body: some View {
         VStack {
             HStack {
-                Text(entry.translation.to.text)
+                Text(entry.translation.to.value)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .lineLimit(1)
@@ -22,7 +22,7 @@ struct TranslationView : View {
                 Spacer()
             }
             HStack {
-                Text(entry.translation.from.text)
+                Text(entry.translation.from.value)
                     .font(.system(.body))
                 Spacer()
             }

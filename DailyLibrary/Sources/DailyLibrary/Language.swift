@@ -1,29 +1,20 @@
-import Foundation
+//
+//  Language.swift
+//  
+//
+//  Created by JP Ungaretti on 8/15/24.
+//
 
-public enum Language: String, Hashable {
-    case Capybarian = "capybarian"
-    case English = "english"
-    case Italian = "italian"
+public enum Language {
+    case english
+    case italian
     
-    public var flagEmoji: Character {
+    public var flagEmoji: String {
         switch self {
-        case .Capybarian:
-            "🏴‍☠️"
-        case .English:
+        case .english:
             "🇺🇸"
-        case .Italian:
+        case .italian:
             "🇮🇹"
-        }
-    }
-
-    public var hello: Word {
-        switch self {
-        case .Capybarian:
-            (self, "yo")
-        case .English:
-            (self, "hello")
-        case .Italian:
-            (self, "ciao")
         }
     }
 }
