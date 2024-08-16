@@ -20,7 +20,7 @@ struct TranslationIntentTimelineProvider: AppIntentTimelineProvider {
     func snapshot(for configuration: TranslationWidgetConfigurationIntent, in context: Context) async -> TranslationTimelineEntry {
         let entry: TranslationTimelineEntry
         if context.isPreview {
-            entry = TranslationTimelineEntry(date: .now, translation: hello)
+            entry = TranslationTimelineEntry(date: .now, translation: italianEnglishHello)
         } else {
             entry = getRandomEntryFor(date: .now)
         }
