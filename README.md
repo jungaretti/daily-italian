@@ -6,7 +6,7 @@ Learn Italian words and practice your vocabulary with a widget on your Home Scre
 
 ## Translations
 
-You can find all of Daily Italian's translations in the [`DailyLibrary/Translations`](https://github.com/jungaretti/daily-language/tree/main/DailyLibrary/Sources/DailyLibrary/Translations) directory. Pull requests to fix translation mistakes are always welcome. Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a new pull request.
+You can find all of Daily Italian's translations in the [`DailyLibrary/Dictionaries`](https://github.com/jungaretti/daily-language/tree/main/DailyLibrary/Sources/DailyLibrary/Dictionaries) directory. Pull requests to fix translation mistakes are always welcome. Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a new pull request.
 
 ## Built With
 
