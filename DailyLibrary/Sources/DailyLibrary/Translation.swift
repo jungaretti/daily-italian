@@ -1,4 +1,9 @@
-import Foundation
+//
+//  Translation.swift
+//
+//
+//  Created by JP Ungaretti on 8/15/24.
+//
 
 public struct Translation {
     public let from: Word
