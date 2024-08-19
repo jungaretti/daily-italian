@@ -5,9 +5,9 @@
 //  Created by JP Ungaretti on 8/15/24.
 //
 
-let italianEnglishHello = Translation(from: (.english, "hello"), to: (.italian, "ciao"))
+private let italianEnglishHello = Translation(from: (.english, "hello"), to: (.italian, "ciao"))
 
-let italianEnglishDictionary: [Translation] = [
+private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "war"), to: (.italian, "guerra")),
     Translation(from: (.english, "thing"), to: (.italian, "cosa")),
     Translation(from: (.english, "street"), to: (.italian, "strada")),
@@ -1175,3 +1175,5 @@ let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "each one"), to: (.italian, "ognuno")),
     Translation(from: (.english, "within"), to: (.italian, "entro"))
 ]
+
+public let italianEnglishProvider = TranslationProvider(hello: italianEnglishHello, dictionary: italianEnglishDictionary)
