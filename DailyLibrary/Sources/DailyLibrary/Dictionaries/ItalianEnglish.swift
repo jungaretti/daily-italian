@@ -836,7 +836,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "to decide"), to: (.italian, "decidere")),
     Translation(from: (.english, "to exist"), to: (.italian, "esistere")),
     Translation(from: (.english, "to receive"), to: (.italian, "ricevere")),
-    Translation(from: (.english, "to hear"), to: (.italian, "intendere")),
+    Translation(from: (.english, "to intend"), to: (.italian, "intendere")),
     Translation(from: (.english, "to observe"), to: (.italian, "osservare")),
     Translation(from: (.english, "to go up"), to: (.italian, "salire")),
     Translation(from: (.english, "to allow"), to: (.italian, "permettere")),
