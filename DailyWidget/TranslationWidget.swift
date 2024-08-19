@@ -29,11 +29,11 @@ struct TranslationWidget: Widget {
 #Preview(as: .systemSmall) {
     TranslationWidget()
 } timeline: {
-    TranslationTimelineEntry(date: Date.now, translation: italianEnglishHello)
+    TranslationTimelineEntry(date: Date.now, translation: italianEnglishProvider.hello)
 }
 
 #Preview(as: .systemMedium) {
     TranslationWidget()
 } timeline: {
-    TranslationTimelineEntry(date: Date.now, translation: italianEnglishHello)
+    TranslationTimelineEntry(date: Date.now, translation: italianEnglishProvider.hello)
 }
