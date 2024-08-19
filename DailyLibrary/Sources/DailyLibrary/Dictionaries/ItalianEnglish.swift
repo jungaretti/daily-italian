@@ -1067,7 +1067,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "before"), to: (.italian, "prima")),
     Translation(from: (.english, "there"), to: (.italian, "li")),
     Translation(from: (.english, "perhaps"), to: (.italian, "forse")),
-    Translation(from: (.english, "Yup"), to: (.italian, "sì")),
+    Translation(from: (.english, "yes"), to: (.italian, "sì")),
     Translation(from: (.english, "that is"), to: (.italian, "cioè")),
     Translation(from: (.english, "under"), to: (.italian, "sotto")),
     Translation(from: (.english, "bad"), to: (.italian, "male")),
