@@ -66,7 +66,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "square"), to: (.italian, "piazza")),
     Translation(from: (.english, "sense"), to: (.italian, "senso")),
     Translation(from: (.english, "question"), to: (.italian, "questione")),
-    Translation(from: (.english, "Opera"), to: (.italian, "opera")),
+    Translation(from: (.english, "work"), to: (.italian, "opera")),
     Translation(from: (.english, "enemy"), to: (.italian, "nemico")),
     Translation(from: (.english, "product"), to: (.italian, "prodotto")),
     Translation(from: (.english, "punishment"), to: (.italian, "pena")),
