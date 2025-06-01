@@ -109,7 +109,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "period"), to: (.italian, "periodo")),
     Translation(from: (.english, "doubt"), to: (.italian, "dubbio")),
     Translation(from: (.english, "development"), to: (.italian, "sviluppo")),
-    Translation(from: (.english, "Research"), to: (.italian, "ricerca")),
+    Translation(from: (.english, "research"), to: (.italian, "ricerca")),
     Translation(from: (.english, "sister"), to: (.italian, "sorella")),
     Translation(from: (.english, "God"), to: (.italian, "dio")),
     Translation(from: (.english, "effect"), to: (.italian, "effetto")),
