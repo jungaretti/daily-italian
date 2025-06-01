@@ -80,7 +80,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "tree"), to: (.italian, "albero")),
     Translation(from: (.english, "flower"), to: (.italian, "fiore")),
     Translation(from: (.english, "policy"), to: (.italian, "politica")),
-    Translation(from: (.english, "room, hall"), to: (.italian, "sala")),
+    Translation(from: (.english, "room"), to: (.italian, "sala")),
     Translation(from: (.english, "process"), to: (.italian, "processo")),
     Translation(from: (.english, "measure"), to: (.italian, "misura")),
     Translation(from: (.english, "position"), to: (.italian, "posizione")),
