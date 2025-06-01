@@ -239,7 +239,7 @@ private let italianEnglishDictionary: [Translation] = [
     Translation(from: (.english, "respect"), to: (.italian, "rispetto")),
     Translation(from: (.english, "ship"), to: (.italian, "nave")),
     Translation(from: (.english, "scene"), to: (.italian, "scena")),
-    Translation(from: (.english, "Stone"), to: (.italian, "pietra")),
+    Translation(from: (.english, "stone"), to: (.italian, "pietra")),
     Translation(from: (.english, "object"), to: (.italian, "oggetto")),
     Translation(from: (.english, "production"), to: (.italian, "produzione")),
     Translation(from: (.english, "possibility"), to: (.italian, "possibilità")),
