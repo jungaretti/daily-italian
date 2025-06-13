@@ -15,9 +15,9 @@ struct ContentView: View {
         VStack {
             Spacer()
 
-            Text(String(translation.to.language.flagEmoji))
-                .font(.title)
             VStack() {
+                Text(String(translation.to.language.flagEmoji))
+                    .font(.title)
                 Text(translation.to.value)
                     .font(.largeTitle)
                     .fontWeight(.bold)
