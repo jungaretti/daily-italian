@@ -19,7 +19,7 @@
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
 		158ECBD22ADC63DB00247626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158ECBD12ADC63DB00247626 /* Assets.xcassets */; };
 		158ECBD72ADC63DB00247626 /* DailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */; };
+		15FF326B2ADC630E00B6B2AA /* DailyItalianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326A2ADC630E00B6B2AA /* DailyItalianApp.swift */; };
 		15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF326C2ADC630E00B6B2AA /* ContentView.swift */; };
 		15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF326E2ADC630F00B6B2AA /* Assets.xcassets */; };
 		15FF32732ADC630F00B6B2AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF32722ADC630F00B6B2AA /* Preview Assets.xcassets */; };
@@ -73,14 +73,14 @@
 		158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWidgetBundle.swift; sourceTree = "<group>"; };
 		158ECBD12ADC63DB00247626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158ECBD32ADC63DB00247626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyWidget.entitlements; sourceTree = "<group>"; };
+		158ECBD42ADC63DB00247626 /* DailyItalianWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyItalianWidget.entitlements; sourceTree = "<group>"; };
 		159637A02B9D0E53004C8BE5 /* DailyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyLibrary; sourceTree = "<group>"; };
 		159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		15FF32672ADC630E00B6B2AA /* DailyLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLanguageApp.swift; sourceTree = "<group>"; };
+		15FF32672ADC630E00B6B2AA /* DailyItalianApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyItalianApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FF326A2ADC630E00B6B2AA /* DailyItalianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItalianApp.swift; sourceTree = "<group>"; };
 		15FF326C2ADC630E00B6B2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15FF326E2ADC630F00B6B2AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		15FF32702ADC630F00B6B2AA /* DailyLanguage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyLanguage.entitlements; sourceTree = "<group>"; };
+		15FF32702ADC630F00B6B2AA /* DailyItalianApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyItalianApp.entitlements; sourceTree = "<group>"; };
 		15FF32722ADC630F00B6B2AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +115,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		158ECBCC2ADC63D900247626 /* DailyWidget */ = {
+		158ECBCC2ADC63D900247626 /* DailyItalianWidget */ = {
 			isa = PBXGroup;
 			children = (
 				158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */,
@@ -126,9 +126,9 @@
 				150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */,
 				158ECBD12ADC63DB00247626 /* Assets.xcassets */,
 				158ECBD32ADC63DB00247626 /* Info.plist */,
-				158ECBD42ADC63DB00247626 /* DailyWidget.entitlements */,
+				158ECBD42ADC63DB00247626 /* DailyItalianWidget.entitlements */,
 			);
-			path = DailyWidget;
+			path = DailyItalianWidget;
 			sourceTree = "<group>";
 		};
 		15FF325E2ADC630E00B6B2AA = {
@@ -137,8 +137,8 @@
 				155364902AE6E35B00164846 /* README.md */,
 				159A4E662AFD39EF008E0829 /* CONTRIBUTING.md */,
 				150C5BFD2AFCC17B00310D62 /* PRIVACY.md */,
-				15FF32692ADC630E00B6B2AA /* DailyLanguage */,
-				158ECBCC2ADC63D900247626 /* DailyWidget */,
+				15FF32692ADC630E00B6B2AA /* DailyItalianApp */,
+				158ECBCC2ADC63D900247626 /* DailyItalianWidget */,
 				159637A02B9D0E53004C8BE5 /* DailyLibrary */,
 				158ECBC72ADC63D900247626 /* Frameworks */,
 				15FF32682ADC630E00B6B2AA /* Products */,
@@ -148,22 +148,22 @@
 		15FF32682ADC630E00B6B2AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15FF32672ADC630E00B6B2AA /* DailyLanguage.app */,
+				15FF32672ADC630E00B6B2AA /* DailyItalianApp.app */,
 				158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		15FF32692ADC630E00B6B2AA /* DailyLanguage */ = {
+		15FF32692ADC630E00B6B2AA /* DailyItalianApp */ = {
 			isa = PBXGroup;
 			children = (
-				15FF326A2ADC630E00B6B2AA /* DailyLanguageApp.swift */,
+				15FF326A2ADC630E00B6B2AA /* DailyItalianApp.swift */,
 				15FF326C2ADC630E00B6B2AA /* ContentView.swift */,
 				15FF326E2ADC630F00B6B2AA /* Assets.xcassets */,
-				15FF32702ADC630F00B6B2AA /* DailyLanguage.entitlements */,
+				15FF32702ADC630F00B6B2AA /* DailyItalianApp.entitlements */,
 				15FF32712ADC630F00B6B2AA /* Preview Content */,
 			);
-			path = DailyLanguage;
+			path = DailyItalianApp;
 			sourceTree = "<group>";
 		};
 		15FF32712ADC630F00B6B2AA /* Preview Content */ = {
@@ -197,9 +197,9 @@
 			productReference = 158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		15FF32662ADC630E00B6B2AA /* DailyLanguage */ = {
+		15FF32662ADC630E00B6B2AA /* DailyItalianApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15FF32762ADC630F00B6B2AA /* Build configuration list for PBXNativeTarget "DailyLanguage" */;
+			buildConfigurationList = 15FF32762ADC630F00B6B2AA /* Build configuration list for PBXNativeTarget "DailyItalianApp" */;
 			buildPhases = (
 				15FF32632ADC630E00B6B2AA /* Sources */,
 				15FF32642ADC630E00B6B2AA /* Frameworks */,
@@ -212,12 +212,12 @@
 			dependencies = (
 				158ECBD62ADC63DB00247626 /* PBXTargetDependency */,
 			);
-			name = DailyLanguage;
+			name = DailyItalianApp;
 			packageProductDependencies = (
 				150E2C922B9D122E0033EABA /* DailyLibrary */,
 			);
 			productName = DailyLanguage;
-			productReference = 15FF32672ADC630E00B6B2AA /* DailyLanguage.app */;
+			productReference = 15FF32672ADC630E00B6B2AA /* DailyItalianApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15FF32622ADC630E00B6B2AA /* Build configuration list for PBXProject "DailyLanguage" */;
+			buildConfigurationList = 15FF32622ADC630E00B6B2AA /* Build configuration list for PBXProject "DailyItalian" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15FF32662ADC630E00B6B2AA /* DailyLanguage */,
+				15FF32662ADC630E00B6B2AA /* DailyItalianApp */,
 				158ECBC52ADC63D900247626 /* DailyWidgetExtension */,
 			);
 		};
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FF326D2ADC630E00B6B2AA /* ContentView.swift in Sources */,
-				15FF326B2ADC630E00B6B2AA /* DailyLanguageApp.swift in Sources */,
+				15FF326B2ADC630E00B6B2AA /* DailyItalianApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,14 +316,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = DailyWidget/DailyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DailyItalianWidget/DailyItalianWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XDGS844A6P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DailyWidget/Info.plist;
+				INFOPLIST_FILE = DailyItalianWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DailyWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -355,14 +355,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = DailyWidget/DailyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DailyItalianWidget/DailyItalianWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XDGS844A6P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DailyWidget/Info.plist;
+				INFOPLIST_FILE = DailyItalianWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DailyWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -511,11 +511,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DailyLanguage/DailyLanguage.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DailyItalianApp/DailyItalianApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"DailyLanguage/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DailyItalianApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XDGS844A6P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -552,11 +552,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DailyLanguage/DailyLanguage.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DailyItalianApp/DailyItalianApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"DailyLanguage/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DailyItalianApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XDGS844A6P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -599,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15FF32622ADC630E00B6B2AA /* Build configuration list for PBXProject "DailyLanguage" */ = {
+		15FF32622ADC630E00B6B2AA /* Build configuration list for PBXProject "DailyItalian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15FF32742ADC630F00B6B2AA /* Debug */,
@@ -608,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15FF32762ADC630F00B6B2AA /* Build configuration list for PBXNativeTarget "DailyLanguage" */ = {
+		15FF32762ADC630F00B6B2AA /* Build configuration list for PBXNativeTarget "DailyItalianApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15FF32772ADC630F00B6B2AA /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  DailyWidgetBundle.swift
-//  DailyWidget
+//  DailyItalianWidget
 //
 //  Created by JP Ungaretti on 10/15/23.
 //
