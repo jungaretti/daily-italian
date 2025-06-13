@@ -1,6 +1,6 @@
 //
 //  TranslationWidget.swift
-//  DailyWidgetExtension
+//  DailyItalianWidget
 //
 //  Created by JP Ungaretti on 3/9/24.
 //

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DailyLanguage
+//  DailyItalianApp
 //
 //  Created by JP Ungaretti on 10/15/23.
 //
