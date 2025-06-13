@@ -7,7 +7,7 @@
 
 import WidgetKit
 import SwiftUI
-import DailyLibrary
+import DailyItalianLibrary
 
 struct TranslationWidget: Widget {
     let kind: String = "DailyWidget"

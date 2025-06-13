@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import DailyLibrary
+import DailyItalianLibrary
 
 struct ContentView: View {
     @State var translation = italianEnglishProvider.random()

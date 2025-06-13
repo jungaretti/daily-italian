@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import DailyLibrary
+import DailyItalianLibrary
 
 struct TranslationView : View {
     var entry: TranslationIntentTimelineProvider.Entry

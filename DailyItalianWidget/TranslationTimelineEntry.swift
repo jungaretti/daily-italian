@@ -6,7 +6,7 @@
 //
 
 import WidgetKit
-import DailyLibrary
+import DailyItalianLibrary
 
 struct TranslationTimelineEntry: TimelineEntry {
     let date: Date

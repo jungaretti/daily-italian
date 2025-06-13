@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "DailyLibrary",
+    name: "DailyItalianLibrary",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "DailyLibrary",
-            targets: ["DailyLibrary"]),
+            name: "DailyItalianLibrary",
+            targets: ["DailyItalianLibrary"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DailyLibrary"),
+            name: "DailyItalianLibrary"),
         .testTarget(
-            name: "DailyLibraryTests",
-            dependencies: ["DailyLibrary"]),
+            name: "DailyItalianLibraryTests",
+            dependencies: ["DailyItalianLibrary"]),
     ]
 )

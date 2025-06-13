@@ -7,7 +7,7 @@
 
 import Foundation
 import WidgetKit
-import DailyLibrary
+import DailyItalianLibrary
 
 struct TranslationIntentTimelineProvider: AppIntentTimelineProvider {
     typealias Entry = TranslationTimelineEntry
