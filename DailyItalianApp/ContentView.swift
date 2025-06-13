@@ -31,7 +31,10 @@ struct ContentView: View {
                 translation = italianEnglishProvider.random()
             }) {
                 Text("Shuffle")
+                    .font(.headline)
+                    .frame(maxWidth: 300, minHeight: 40, idealHeight: 50)
             }
+            .buttonStyle(.borderedProminent)
             .padding()
         }
     }
