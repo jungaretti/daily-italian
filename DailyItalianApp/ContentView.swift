@@ -30,9 +30,13 @@ struct ContentView: View {
             Button(action: {
                 translation = italianEnglishProvider.random()
             }) {
-                Text("Shuffle")
-                    .font(.headline)
-                    .frame(maxWidth: 300, minHeight: 40, idealHeight: 50)
+                VStack(spacing: 5) {
+                    Image(systemName: "shuffle")
+                    Text("Shuffle")
+                        .font(.headline)
+                }
+                .frame(maxWidth: 300)
+                .padding(5)
             }
             .buttonStyle(.borderedProminent)
             .padding()
