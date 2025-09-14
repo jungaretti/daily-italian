@@ -12,6 +12,7 @@
 		150E2C9D2B9D166B0033EABA /* TranslationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */; };
 		150E2C9F2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */; };
 		150E2CA12B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2CA02B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift */; };
+		152D43212E77660000DA60B0 /* daily-italian.icon in Resources */ = {isa = PBXBuildFile; fileRef = 152D43202E77660000DA60B0 /* daily-italian.icon */; };
 		158ECBC92ADC63D900247626 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBC82ADC63D900247626 /* WidgetKit.framework */; };
 		158ECBCB2ADC63D900247626 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158ECBCA2ADC63D900247626 /* SwiftUI.framework */; };
 		158ECBCE2ADC63D900247626 /* DailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ECBCD2ADC63D900247626 /* DailyWidgetBundle.swift */; };
@@ -66,6 +67,7 @@
 		150E2C9C2B9D166B0033EABA /* TranslationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidget.swift; sourceTree = "<group>"; };
 		150E2C9E2B9D1EA10033EABA /* TranslationWidgetConfigurationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationWidgetConfigurationIntent.swift; sourceTree = "<group>"; };
 		150E2CA02B9D1FDD0033EABA /* TranslationIntentTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationIntentTimelineProvider.swift; sourceTree = "<group>"; };
+		152D43202E77660000DA60B0 /* daily-italian.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "daily-italian.icon"; sourceTree = "<group>"; };
 		155364902AE6E35B00164846 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		158ECBC62ADC63D900247626 /* DailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		158ECBC82ADC63D900247626 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
@@ -159,6 +161,7 @@
 			children = (
 				15FF326A2ADC630E00B6B2AA /* DailyItalianApp.swift */,
 				15FF326C2ADC630E00B6B2AA /* ContentView.swift */,
+				152D43202E77660000DA60B0 /* daily-italian.icon */,
 				15FF326E2ADC630F00B6B2AA /* Assets.xcassets */,
 				15FF32702ADC630F00B6B2AA /* DailyItalianApp.entitlements */,
 				15FF32712ADC630F00B6B2AA /* Preview Content */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152D43212E77660000DA60B0 /* daily-italian.icon in Resources */,
 				15FF32732ADC630F00B6B2AA /* Preview Assets.xcassets in Resources */,
 				15FF326F2ADC630F00B6B2AA /* Assets.xcassets in Resources */,
 			);
@@ -511,7 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "daily-italian";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DailyItalianApp/DailyItalianApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,7 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "daily-italian";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DailyItalianApp/DailyItalianApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
