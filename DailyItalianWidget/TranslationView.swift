@@ -9,6 +9,8 @@ import SwiftUI
 import DailyItalianLibrary
 
 struct TranslationView : View {
+    @Environment(\.widgetRenderingMode) var renderingMode
+
     var entry: TranslationIntentTimelineProvider.Entry
 
     var body: some View {
@@ -19,6 +21,7 @@ struct TranslationView : View {
                     .fontWeight(.bold)
                     .lineLimit(1)
                     .minimumScaleFactor(0.2)
+                    .widgetAccentable()
                 Spacer()
             }
             HStack {
@@ -30,8 +33,13 @@ struct TranslationView : View {
             Spacer()
 
             HStack {
-                Text(String(entry.translation.to.language.flagEmoji))
-                    .font(.title)
+                switch renderingMode {
+                case .fullColor:
+                    Text(String(entry.translation.to.language.flagEmoji))
+                        .font(.title)
+                default:
+                    EmptyView()
+                }
                 Spacer()
             }
         }
