@@ -1,12 +1,12 @@
 //
-//  TranslationWidgetConfigurationIntent.swift
-//  DailyItalianWidget
+//  AppIntent.swift
+//  DailyWidget
 //
-//  Created by JP Ungaretti on 3/9/24.
+//  Created by JP Ungaretti on 10/6/25.
 //
 
+import WidgetKit
 import AppIntents
-import Foundation
 
 enum RefreshIntervalParameter: String, AppEnum {
     case fiveMinutes = "5m"
@@ -32,9 +32,10 @@ enum RefreshIntervalParameter: String, AppEnum {
     }
 }
 
-struct TranslationWidgetConfigurationIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource = "Translation"
-    
+struct TranslationConfigurationAppIntent: WidgetConfigurationIntent {
+    static var title: LocalizedStringResource { "Translation" }
+    static var description: IntentDescription { "This is an example widget." }
+
     @Parameter(title: "Refresh", default: .hour)
     var interval: RefreshIntervalParameter
 }
