@@ -90,10 +90,16 @@ struct TranslationWidget: Widget {
     let kind: String = "DailyWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: TranslationConfigurationAppIntent.self, provider: Provider()) { entry in
-            TranslationEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
-        }
+        AppIntentConfiguration(
+            kind: kind,
+            intent: TranslationConfigurationAppIntent.self,
+            provider: Provider()) { entry in
+                TranslationEntryView(entry: entry)
+                    .containerBackground(.fill.tertiary, for: .widget)
+            }
+        .configurationDisplayName("Random Word")
+        .description("Learn new words every day.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
