@@ -34,6 +34,7 @@ enum RefreshIntervalParameter: String, AppEnum {
 
 struct TranslationConfigurationAppIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource { "Translation" }
+    static let persistentIdentifier = "TranslationWidgetConfigurationIntent"
 
     @Parameter(title: "Refresh", default: .hour)
     var interval: RefreshIntervalParameter
