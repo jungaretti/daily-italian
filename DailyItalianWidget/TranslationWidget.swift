@@ -9,7 +9,7 @@ import WidgetKit
 import SwiftUI
 import DailyItalianLibrary
 
-struct Provider: AppIntentTimelineProvider {
+struct TranslationTimelineProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> TranslationEntry {
         TranslationEntry(date: Date(), translation: italianEnglishProvider.hello, configuration: TranslationConfigurationAppIntent())
     }
@@ -51,7 +51,7 @@ struct TranslationEntry: TimelineEntry {
 struct TranslationEntryView : View {
     @Environment(\.widgetRenderingMode) var renderingMode
 
-    var entry: Provider.Entry
+    var entry: TranslationTimelineProvider.Entry
 
     var body: some View {
         VStack {
@@ -93,32 +93,26 @@ struct TranslationWidget: Widget {
         AppIntentConfiguration(
             kind: kind,
             intent: TranslationConfigurationAppIntent.self,
-            provider: Provider()) { entry in
+            provider: TranslationTimelineProvider()) { entry in
                 TranslationEntryView(entry: entry)
                     .containerBackground(.fill.tertiary, for: .widget)
             }
-        .configurationDisplayName("Random Word")
-        .description("Learn new words every day.")
+        .configurationDisplayName("Translation")
+        .description("Shows a random translation.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
-extension TranslationConfigurationAppIntent {
-    fileprivate static var ciao: TranslationConfigurationAppIntent {
-        let intent = TranslationConfigurationAppIntent()
-        intent.interval = .fiveMinutes
-        return intent
-    }
-}
+let mockConfiguration = TranslationConfigurationAppIntent()
 
 #Preview(as: .systemSmall) {
     TranslationWidget()
 } timeline: {
-    TranslationEntry(date: Date.now, translation: italianEnglishProvider.hello, configuration: .ciao)
+    TranslationEntry(date: Date.now, translation: italianEnglishProvider.hello, configuration: mockConfiguration)
 }
 
 #Preview(as: .systemMedium) {
     TranslationWidget()
 } timeline: {
-    TranslationEntry(date: Date.now, translation: italianEnglishProvider.hello, configuration: .ciao)
+    TranslationEntry(date: Date.now, translation: italianEnglishProvider.hello, configuration: mockConfiguration)
 }

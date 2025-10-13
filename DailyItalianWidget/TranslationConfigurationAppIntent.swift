@@ -1,5 +1,5 @@
 //
-//  AppIntent.swift
+//  TranslationConfigurationAppIntent.swift
 //  DailyWidget
 //
 //  Created by JP Ungaretti on 10/6/25.
@@ -33,8 +33,10 @@ enum RefreshIntervalParameter: String, AppEnum {
 }
 
 struct TranslationConfigurationAppIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource { "Translation" }
     static let persistentIdentifier = "TranslationWidgetConfigurationIntent"
+
+    static var title: LocalizedStringResource = "Translation"
+    static var description = IntentDescription("Shows a random translation.")
 
     @Parameter(title: "Refresh", default: .hour)
     var interval: RefreshIntervalParameter
