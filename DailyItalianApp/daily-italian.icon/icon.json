@@ -1,4 +1,7 @@
 {
+  "features" : [
+    "specular-location"
+  ],
   "fill" : {
     "linear-gradient" : [
       "display-p3:0.33209,0.53962,0.30067,1.00000",
@@ -28,13 +31,14 @@
         }
       ],
       "lighting" : "individual",
+      "name" : "Italy",
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
       },
-      "specular" : false,
+      "specular" : "inside",
       "translucency" : {
-        "enabled" : true,
+        "enabled" : false,
         "value" : 0.15
       }
     }
